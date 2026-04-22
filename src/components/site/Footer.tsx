@@ -1,0 +1,53 @@
+import { Link } from "react-router-dom";
+import logoMark from "@/assets/arj-mark.png";
+
+const Footer = () => {
+  return (
+    <footer className="mt-40 border-t border-border/40">
+      <div className="container-luxe py-24 grid gap-16 md:grid-cols-12">
+        <div className="md:col-span-5">
+          <img src={logoMark} alt="ARJ" className="h-10 w-auto mb-8" />
+          <p className="max-w-sm text-sm text-muted-foreground leading-[1.95] font-light">
+            The House of ARJ. A small atelier of luxury hijabs and modest couture, made slowly, by hand — in Lucknow, India.
+          </p>
+        </div>
+
+        <div className="md:col-span-3 md:col-start-7">
+          <p className="eyebrow mb-6">Maison</p>
+          <ul className="space-y-4 text-sm">
+            <li><Link to="/collections" className="link-underline">Collections</Link></li>
+            <li><Link to="/journal" className="link-underline">Journal</Link></li>
+            <li><Link to="/about" className="link-underline">About</Link></li>
+            <li><Link to="/contact" className="link-underline">Contact</Link></li>
+          </ul>
+        </div>
+
+        <div className="md:col-span-3">
+          <p className="eyebrow mb-6">Atelier</p>
+          <address className="not-italic text-sm text-muted-foreground leading-[1.95] font-light space-y-3">
+            <p>Dubagga, Lucknow<br />India</p>
+            <a href="tel:+919278335862" className="block text-foreground link-underline">
+              +91 92783 35862
+            </a>
+            <a href="mailto:thehouseofarj@gmail.com" className="block text-foreground link-underline">
+              thehouseofarj@gmail.com
+            </a>
+          </address>
+        </div>
+      </div>
+
+      <div className="border-t border-border/40">
+        <div className="container-luxe py-8 flex flex-col md:flex-row items-center justify-between gap-3">
+          <p className="text-[0.62rem] uppercase tracking-[0.36em] text-muted-foreground">
+            © {new Date().getFullYear()} The House of ARJ
+          </p>
+          <p className="text-[0.62rem] uppercase tracking-[0.36em] text-muted-foreground">
+            All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

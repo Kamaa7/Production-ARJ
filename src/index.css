@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Italiana&family=Jost:wght@200;300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ARJ — The House of ARJ
+   Tokens for a single, deliberate luxury house.
+   All colors HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 33 28% 90%;          /* warm tan ivory — matches logo card */
+    --foreground: 0 0% 8%;             /* deep ink */
+
+    --card: 33 28% 93%;
+    --card-foreground: 0 0% 8%;
+
+    --popover: 33 28% 93%;
+    --popover-foreground: 0 0% 8%;
+
+    --primary: 0 0% 8%;
+    --primary-foreground: 33 28% 93%;
+
+    --secondary: 33 18% 82%;
+    --secondary-foreground: 0 0% 8%;
+
+    --muted: 33 18% 86%;
+    --muted-foreground: 25 6% 36%;
+
+    --accent: 38 32% 52%;              /* restrained gold */
+    --accent-foreground: 0 0% 8%;
+
+    --gold: 38 32% 52%;
+    --ink: 0 0% 8%;
+    --ivory: 33 28% 90%;
+    --bone: 33 28% 95%;
+
+    --destructive: 0 50% 38%;
+    --destructive-foreground: 33 28% 93%;
+
+    --border: 30 10% 72%;
+    --input: 30 10% 72%;
+    --ring: 38 32% 52%;
+
+    --radius: 0;
+
+    --sidebar-background: 33 28% 90%;
+    --sidebar-foreground: 0 0% 8%;
+    --sidebar-primary: 0 0% 8%;
+    --sidebar-primary-foreground: 33 28% 93%;
+    --sidebar-accent: 33 18% 82%;
+    --sidebar-accent-foreground: 0 0% 8%;
+    --sidebar-border: 30 10% 72%;
+    --sidebar-ring: 38 32% 52%;
+
+    --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 33 28% 93%;
+    --card: 0 0% 10%;
+    --card-foreground: 33 28% 93%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 33 28% 93%;
+    --primary: 33 28% 93%;
+    --primary-foreground: 0 0% 8%;
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 33 28% 93%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 30 6% 64%;
+    --accent: 38 32% 52%;
+    --accent-foreground: 0 0% 8%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 38 32% 52%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "ss01", "ss02", "kern", "liga", "calt";
+    font-weight: 300;
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4 {
+    font-feature-settings: "dlig", "liga", "kern";
+  }
+
+  ::selection {
+    background: hsl(var(--ink));
+    color: hsl(var(--ivory));
+  }
+}
+
+@layer components {
+  .container-luxe {
+    @apply mx-auto w-full max-w-[1480px] px-5 sm:px-8 md:px-16 lg:px-24;
+  }
+
+  .eyebrow {
+    @apply text-[0.65rem] uppercase tracking-[0.4em] text-muted-foreground font-light;
+  }
+
+  .display {
+    @apply font-display font-normal leading-[1.02] tracking-[-0.025em];
+  }
+
+  .serif-italic {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .gold-rule {
+    @apply block h-px w-10 bg-foreground/40;
+  }
+
+  .link-underline {
+    @apply relative inline-block after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-full after:origin-right after:scale-x-0 after:bg-current after:transition-transform after:duration-700 hover:after:origin-left hover:after:scale-x-100;
+  }
+}
