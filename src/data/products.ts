@@ -27,6 +27,7 @@ import coordOchreFull from "@/assets/coord-ochre-full.jpg";
 import coordNavyDetail from "@/assets/coord-navy-detail.jpg";
 import coordOchreDetail from "@/assets/coord-ochre-detail.jpg";
 import coordNavyFull from "@/assets/coord-navy-full.jpg";
+import lavenderCoordSet from "@/assets/lavender-co-ord-set.png";
 
 export type Product = {
   slug: string;
@@ -222,6 +223,19 @@ export const products: Product[] = [
     image: lookSageProfile,
     gallery: [lookSageProfile, lookSageRose],
     fabric: "Cotton rayon · Cotton dupatta",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "lavender-co-ord-set",
+    name: "Lavender co-ord set",
+    category: "Co-ord Sets",
+    price: "₹ 1,599",
+    shortDescription: "Lavender co-ord set with a floral overlay drape.",
+    description:
+      "A lavender co-ord set finished with a sheer floral overlay that adds movement and depth. A polished, modest silhouette designed for festive daywear and evening outings.",
+    image: lavenderCoordSet,
+    gallery: [lavenderCoordSet],
+    fabric: "Soft blended fabric · Sheer overlay",
     origin: "Lucknow, India",
   },
   {

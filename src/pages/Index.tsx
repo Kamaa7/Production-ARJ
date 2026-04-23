@@ -27,7 +27,16 @@ const Index = () => {
       if (b.slug === "co-ord-set") return 1;
       return 0;
     });
-  const heroSlides = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8];
+  const heroSlides = [
+    { src: hero1, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
+    { src: hero2, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
+    { src: hero3, alt: "ARJ — Co-ord set, Spring MMXXV" },
+    { src: hero4, alt: "ARJ — Co-ord set, Spring MMXXV" },
+    { src: hero5, alt: "ARJ — Co-ord set, Spring MMXXV" },
+    { src: hero6, alt: "ARJ — Co-ord set, Spring MMXXV" },
+    { src: hero7, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
+    { src: hero8, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
+  ];
   const [slide, setSlide] = useState(0);
 
   useEffect(() => {
@@ -42,8 +51,8 @@ const Index = () => {
         <AnimatePresence mode="sync">
           <motion.img
             key={slide}
-            src={heroSlides[slide]}
-            alt="ARJ — Zardozi Hijabs, Spring MMXXV"
+            src={heroSlides[slide].src}
+            alt={heroSlides[slide].alt}
             loading="eager"
             decoding="async"
             fetchPriority="high"
