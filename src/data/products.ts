@@ -212,16 +212,16 @@ export const products: Product[] = [
     origin: "Lucknow, India",
   },
   {
-    slug: "rose-chikan-hijab",
-    name: "Rose Chikan Hijab",
-    category: "Hijabs",
-    price: "₹ 649",
-    shortDescription: "Rose cotton hijab, scallop-edged with chikan florals.",
+    slug: "co-ord-set",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
+    shortDescription: "Sage pleated co-ord with a rose chikan dupatta.",
     description:
-      "A square hijab in rose-dyed cotton voile, scalloped along the edge and embroidered in ivory chikankari. Light, breathable, drapes softly.",
+      "A soft sage-toned co-ord — pleated tunic and tapered trousers — worn with a rose cotton dupatta embroidered in ivory chikankari. One composition for garden days and slow evenings.",
     image: lookSageProfile,
     gallery: [lookSageProfile, lookSageRose],
-    fabric: "Cotton voile",
+    fabric: "Cotton rayon · Cotton dupatta",
     origin: "Lucknow, India",
   },
   {
