@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
@@ -20,6 +20,7 @@ import hero7 from "@/assets/hero-7-lavender-zardozi.jpg";
 import hero8 from "@/assets/hero-8-rust-zardozi.jpg";
 
 const Index = () => {
+  const reduceMotion = useReducedMotion();
   const hijabs = products
     .filter((p) => p.category === "Zardozi Hijabs" || p.category === "Hijabs" || p.category === "Co-ord Sets")
     .sort((a, b) => {
@@ -40,9 +41,10 @@ const Index = () => {
   const [slide, setSlide] = useState(0);
 
   useEffect(() => {
+    if (reduceMotion) return;
     const id = setInterval(() => setSlide((s) => (s + 1) % heroSlides.length), 5500);
     return () => clearInterval(id);
-  }, [heroSlides.length]);
+  }, [heroSlides.length, reduceMotion]);
 
   return (
     <Layout>
@@ -56,14 +58,15 @@ const Index = () => {
             loading="eager"
             decoding="async"
             fetchPriority="high"
-            initial={{ scale: 1.1, opacity: 0 }}
-            animate={{ scale: 1.02, opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={reduceMotion ? false : { scale: 1.1, opacity: 0 }}
+            animate={{ scale: reduceMotion ? 1 : 1.02, opacity: 1 }}
+            exit={reduceMotion ? undefined : { opacity: 0 }}
             transition={{
-              opacity: { duration: 1.8, ease: [0.22, 1, 0.36, 1] },
-              scale: { duration: 7, ease: "linear" },
+              opacity: { duration: reduceMotion ? 0 : 1.2, ease: [0.22, 1, 0.36, 1] },
+              scale: { duration: reduceMotion ? 0 : 7, ease: "linear" },
             }}
             className="absolute inset-0 h-full w-full object-cover object-[60%_center] md:object-center"
+            style={{ willChange: "transform, opacity" }}
           />
         </AnimatePresence>
         <div className="absolute inset-0 bg-gradient-to-b from-ink/45 via-ink/15 to-ink/70" />

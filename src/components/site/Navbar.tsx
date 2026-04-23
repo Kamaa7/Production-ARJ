@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logoMark from "@/assets/arj-mark.png";
 
@@ -15,6 +15,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const location = useLocation();
+  const reduceMotion = useReducedMotion();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -30,10 +31,10 @@ const Navbar = () => {
 
   return (
     <motion.header
-      initial={{ y: -16, opacity: 0 }}
+      initial={reduceMotion ? false : { y: -16, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-1000 ${
+      transition={{ duration: reduceMotion ? 0 : 0.7, ease: [0.22, 1, 0.36, 1] }}
+      className={`fixed inset-x-0 top-0 z-50 transition-colors duration-500 ${
         transparent ? "bg-transparent" : "bg-background/80 backdrop-blur-md border-b border-border/40"
       }`}
     >
@@ -78,10 +79,10 @@ const Navbar = () => {
       <AnimatePresence>
         {open && (
           <motion.nav
-            initial={{ opacity: 0, y: -8 }}
+            initial={reduceMotion ? false : { opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            exit={reduceMotion ? undefined : { opacity: 0, y: -8 }}
+            transition={{ duration: reduceMotion ? 0 : 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="md:hidden bg-background border-t border-border/40"
           >
             <ul className="container-luxe py-10 sm:py-12 flex flex-col gap-6 sm:gap-8">
