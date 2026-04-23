@@ -96,9 +96,9 @@ export const products: Product[] = [
   },
   {
     slug: "blush-gathered-set",
-    name: "Blush Gathered Set",
-    category: "Kurta Sets",
-    price: "₹ 1,200",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
     shortDescription: "Drawstring kurta in blush rayon with straight pants.",
     description:
       "A softly gathered kurta in blush-toned rayon, drawn at the waist by a slender drawstring and worn over straight, unpleated trousers. A study in quiet, weekday grace.",
@@ -109,9 +109,9 @@ export const products: Product[] = [
   },
   {
     slug: "sage-chikan-set",
-    name: "Sage Chikan Set",
-    category: "Kurta Sets",
-    price: "₹ 1,150",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
     shortDescription: "Hand-embroidered chikankari kurta with rose dupatta.",
     description:
       "A three-piece composition in pistachio rayon. The kurta is hand-embroidered in Lucknowi chikankari, finished with a rose-dyed cotton dupatta scattered in ivory floral threadwork.",
@@ -122,9 +122,9 @@ export const products: Product[] = [
   },
   {
     slug: "noir-zardozi-tunic",
-    name: "Noir Zardozi Tunic",
-    category: "Kurta Sets",
-    price: "₹ 1,200",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
     shortDescription: "Black tunic with copper zardozi placket.",
     description:
       "A long-line tunic in midnight rayon, traced down the placket with copper-thread zardozi and finished with antique brass buttons. Worn here with a printed kashmiri stole.",
@@ -135,9 +135,9 @@ export const products: Product[] = [
   },
   {
     slug: "crimson-dotted-set",
-    name: "Crimson Dotted Set",
-    category: "Kurta Sets",
-    price: "₹ 1,100",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
     shortDescription: "Black dobby-dot kurta worn with a crimson hijab.",
     description:
       "A noir kurta in dobby-dotted cotton, scalloped along the hem in fine ivory lace, paired with a crimson cotton hijab. A composition of contrast — softened by hand.",
@@ -148,9 +148,9 @@ export const products: Product[] = [
   },
   {
     slug: "zebra-kaftan",
-    name: "Zebra Kaftan",
-    category: "Kaftans",
-    price: "₹ 1,200",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
     shortDescription: "Hand-painted zebra kaftan in ink and ivory.",
     description:
       "A wide-cut kaftan in flowing satin, hand-screened in painterly zebra strokes. Bracelet sleeves and a buttoned placket. Worn with a deep aubergine hijab.",
@@ -161,9 +161,9 @@ export const products: Product[] = [
   },
   {
     slug: "pinstripe-noir-set",
-    name: "Pinstripe Noir Set",
-    category: "Kurta Sets",
-    price: "₹ 1,050",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
     shortDescription: "Tailored pinstripe co-ord in fluid viscose.",
     description:
       "A relaxed two-piece in inky viscose, traced through with fine ivory pinstripes. A long shirt-tunic over wide-leg trousers — quietly architectural.",
@@ -174,9 +174,9 @@ export const products: Product[] = [
   },
   {
     slug: "leopard-kaftan",
-    name: "Leopard Kaftan",
-    category: "Kaftans",
-    price: "₹ 1,150",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
     shortDescription: "Co-ord kaftan in painterly leopard print.",
     description:
       "A flowing two-piece in soft viscose, cut as a draped kaftan over wide trousers. The print is hand-screened in earth tones — sand, ochre, ink.",
@@ -187,9 +187,9 @@ export const products: Product[] = [
   },
   {
     slug: "noir-mukaish-set",
-    name: "Noir Mukaish Set",
-    category: "Kurta Sets",
-    price: "₹ 1,100",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
     shortDescription: "Mukaish-dotted black kurta with straight pants.",
     description:
       "A quietly dressed co-ord. The kurta is dotted with mukaish — small metallic flecks, hammered by hand — and worn with straight, unpleated trousers.",
@@ -200,9 +200,9 @@ export const products: Product[] = [
   },
   {
     slug: "ochre-tunic-magenta-hijab",
-    name: "Ochre Tunic, Magenta Hijab",
-    category: "Kurta Sets",
-    price: "₹ 1,050",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
     shortDescription: "Ochre cotton tunic with horn buttons, magenta wool hijab.",
     description:
       "A long ochre tunic in handwoven cotton, fastened with carved horn buttons and gathered cuffs. Worn with a soft magenta wool hijab — a study in warm contrast.",
@@ -225,36 +225,36 @@ export const products: Product[] = [
     origin: "Lucknow, India",
   },
   {
-    slug: "magenta-wool-hijab",
-    name: "Magenta Wool Hijab",
-    category: "Hijabs",
-    price: "₹ 649",
-    shortDescription: "Soft magenta wool hijab with fringed edges.",
+    slug: "woolen-co-ord-set",
+    name: "Woolen co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
+    shortDescription: "Warm woolen co-ord with a deep magenta drape.",
     description:
-      "A rectangular hijab in fine, brushed wool — dyed deep magenta and finished with delicate self-fringing. Warm, weightless, drapes with quiet body.",
+      "A warm woolen co-ord in an earthy ochre tone, styled with a deep magenta drape for contrast. Soft, modest, and easy to wear across cooler evenings.",
     image: lookOchreMagenta,
     gallery: [lookOchreMagenta],
-    fabric: "Brushed wool",
+    fabric: "Brushed wool blend",
     origin: "Srinagar, Kashmir",
   },
   {
     slug: "kashmiri-stole",
-    name: "Kashmiri Stole",
-    category: "Hijabs",
-    price: "₹ 649",
-    shortDescription: "Wool stole with copper paisley embroidery.",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
+    shortDescription: "Black co-ord with a fluid drape and minimal detailing.",
     description:
-      "A rectangular stole in fine wool, embroidered along one edge in copper-thread paisley. Worn as a hijab, a wrap, or a shawl.",
+      "A black co-ord set with a clean, modest silhouette and soft drape. Designed for everyday elegance with easy movement and a tailored fall.",
     image: lookNoirFountain,
     gallery: [lookNoirFountain, lookNoirGarden],
-    fabric: "Wool · Hand embroidery",
-    origin: "Srinagar, Kashmir",
+    fabric: "Soft wool blend",
+    origin: "Lucknow, India",
   },
   {
     slug: "ochre-cotton-coord",
-    name: "Ochre Cotton Co-ord",
+    name: "Co-ord-set",
     category: "Co-ord Sets",
-    price: "₹ 999",
+    price: "₹ 1,499",
     shortDescription: "Handwoven ochre cotton kurta with carved horn buttons.",
     description:
       "A long ochre kurta in handwoven cotton, fastened with carved horn buttons and gathered at the cuff. Cut full and unhurried — for the slow days, the long walks, the warm light of late afternoon.",
@@ -265,9 +265,9 @@ export const products: Product[] = [
   },
   {
     slug: "navy-windowpane-coord",
-    name: "Navy Windowpane Co-ord",
+    name: "Co-ord-set",
     category: "Co-ord Sets",
-    price: "₹ 999",
+    price: "₹ 1,499",
     shortDescription: "Brushed cotton kurta in navy with rust windowpane check.",
     description:
       "A relaxed shirt-kurta in brushed cotton, woven in deep navy and traced through with a fine rust windowpane check. Patch pockets, dropped shoulders, mother-of-pearl buttons. Quietly tailored for the cooler months.",
