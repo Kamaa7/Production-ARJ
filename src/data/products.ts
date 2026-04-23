@@ -18,6 +18,7 @@ import zardoziBow from "@/assets/zardozi-crimson-bow.jpg";
 import zardoziWhisper from "@/assets/zardozi-crimson-whisper.jpg";
 import zardoziCamel from "@/assets/zardozi-camel-repose.jpg";
 import zardoziDetail from "@/assets/zardozi-crimson-detail.jpg";
+import zardoziOrangePortrait from "@/assets/zardozi-orange-portrait.jpeg";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
 import coordOchreCuff from "@/assets/coord-ochre-cuff.jpg";
@@ -78,6 +79,19 @@ export const products: Product[] = [
     image: zardoziCamel,
     gallery: [zardoziCamel, zardoziDetail],
     fabric: "Georgette · Bead & sequin handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "orange-zardozi-hijab",
+    name: "Orange Zardozi Hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 649",
+    shortDescription: "Warm orange georgette hijab with gold zardozi along the brow.",
+    description:
+      "A warm orange georgette hijab, hand-embroidered in gold zardozi, beadwork and fine thread along the brow and temple. Luminous and wearable — finished slowly in our Lucknow atelier.",
+    image: zardoziOrangePortrait,
+    gallery: [zardoziOrangePortrait],
+    fabric: "Pure georgette · Zardozi handwork",
     origin: "Lucknow, India",
   },
   {
