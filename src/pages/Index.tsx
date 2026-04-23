@@ -20,7 +20,13 @@ import hero7 from "@/assets/hero-7-lavender-zardozi.jpg";
 import hero8 from "@/assets/hero-8-rust-zardozi.jpg";
 
 const Index = () => {
-  const hijabs = products.filter((p) => p.category === "Zardozi Hijabs" || p.category === "Hijabs");
+  const hijabs = products
+    .filter((p) => p.category === "Zardozi Hijabs" || p.category === "Hijabs" || p.category === "Co-ord Sets")
+    .sort((a, b) => {
+      if (a.slug === "co-ord-set") return -1;
+      if (b.slug === "co-ord-set") return 1;
+      return 0;
+    });
   const heroSlides = [hero1, hero2, hero3, hero4, hero5, hero6, hero7, hero8];
   const [slide, setSlide] = useState(0);
 

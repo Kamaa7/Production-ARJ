@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
@@ -8,8 +8,13 @@ import { getProduct, products } from "@/data/products";
 
 const Product = () => {
   const { slug } = useParams();
-  const product = getProduct(slug || "");
   const [active, setActive] = useState(0);
+
+  if (slug === "rose-chikan-hijab") {
+    return <Navigate to="/product/co-ord-set" replace />;
+  }
+
+  const product = getProduct(slug || "");
 
   if (!product) {
     return (
