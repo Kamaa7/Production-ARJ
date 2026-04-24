@@ -149,7 +149,7 @@ export const products: Product[] = [
   },
   {
     slug: "zebra-kaftan",
-    name: "Co-ord-set",
+    name: "Kaftan Set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
     shortDescription: "Hand-painted zebra kaftan in ink and ivory.",
@@ -175,7 +175,7 @@ export const products: Product[] = [
   },
   {
     slug: "leopard-kaftan",
-    name: "Co-ord-set",
+    name: "Kaftan Set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
     shortDescription: "Co-ord kaftan in painterly leopard print.",
