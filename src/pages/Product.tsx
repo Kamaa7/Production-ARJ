@@ -14,7 +14,7 @@ const Product = () => {
     return <Navigate to="/product/co-ord-set" replace />;
   }
   if (slug === "magenta-wool-hijab") {
-    return <Navigate to="/product/woolen-co-ord-set" replace />;
+    return <Navigate to="/product/co-ord-set" replace />;
   }
 
   const product = getProduct(slug || "");

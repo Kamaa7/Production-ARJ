@@ -8,7 +8,6 @@ import lookRoseArch from "@/assets/look-rose-arch.jpg";
 import lookCrimsonRose from "@/assets/look-crimson-rose.jpg";
 import lookZebraKaftan from "@/assets/look-zebra-kaftan.jpg";
 import lookPinstripeNoir from "@/assets/look-pinstripe-noir.jpg";
-import lookOchreMagenta from "@/assets/look-ochre-magenta.jpg";
 
 import zardoziPortrait from "@/assets/zardozi-lavender-portrait.jpg";
 import zardoziGlance from "@/assets/zardozi-crimson-glance.jpg";
@@ -200,19 +199,6 @@ export const products: Product[] = [
     origin: "Lucknow, India",
   },
   {
-    slug: "ochre-tunic-magenta-hijab",
-    name: "Co-ord-set",
-    category: "Co-ord Sets",
-    price: "₹ 1,499",
-    shortDescription: "Ochre cotton tunic with horn buttons, magenta wool hijab.",
-    description:
-      "A long ochre tunic in handwoven cotton, fastened with carved horn buttons and gathered cuffs. Worn with a soft magenta wool hijab — a study in warm contrast.",
-    image: lookOchreMagenta,
-    gallery: [lookOchreMagenta],
-    fabric: "Handwoven cotton · Wool hijab",
-    origin: "Lucknow, India",
-  },
-  {
     slug: "co-ord-set",
     name: "Co-ord-set",
     category: "Co-ord Sets",
@@ -237,19 +223,6 @@ export const products: Product[] = [
     gallery: [lavenderCoordSet],
     fabric: "Soft blended fabric · Sheer overlay",
     origin: "Lucknow, India",
-  },
-  {
-    slug: "woolen-co-ord-set",
-    name: "Woolen co-ord-set",
-    category: "Co-ord Sets",
-    price: "₹ 1,499",
-    shortDescription: "Warm woolen co-ord with a deep magenta drape.",
-    description:
-      "A warm woolen co-ord in an earthy ochre tone, styled with a deep magenta drape for contrast. Soft, modest, and easy to wear across cooler evenings.",
-    image: lookOchreMagenta,
-    gallery: [lookOchreMagenta],
-    fabric: "Brushed wool blend",
-    origin: "Srinagar, Kashmir",
   },
   {
     slug: "kashmiri-stole",
