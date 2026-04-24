@@ -203,7 +203,7 @@ export const products: Product[] = [
   },
   {
     slug: "co-ord-set",
-    name: "Woolen co-ord-set",
+    name: "Pastel green co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
     shortDescription: "Sage pleated co-ord with a rose chikan dupatta.",
