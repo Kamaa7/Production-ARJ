@@ -29,6 +29,7 @@ import coordNavyFull from "@/assets/coord-navy-full.jpg";
 import lavenderCoordSet from "@/assets/lavender-co-ord-set.png";
 import coordSet1599 from "@/assets/Co-ord-set 1599.jpg";
 import coordSet999 from "@/assets/co-ord-set 999.jpg";
+import hero3BlushGardenSet from "@/assets/hero-3-blush-garden.png";
 
 export type Product = {
   slug: string;
@@ -236,6 +237,19 @@ export const products: Product[] = [
       "A clean, straight-cut maroon co-ord set with soft drape and relaxed tailoring, designed for comfort across day-long wear.",
     image: coordSet999,
     gallery: [coordSet999],
+    fabric: "Soft blended fabric",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "hero-3-blush-garden",
+    name: "hero-3-blush-garden",
+    category: "Co-ord Sets",
+    price: "₹ 1,399",
+    shortDescription: "Soft blush garden co-ord set with a light drape.",
+    description:
+      "A blush garden-toned co-ord set with a clean, modest silhouette and fluid drape designed for everyday comfort and an elevated finish.",
+    image: hero3BlushGardenSet,
+    gallery: [hero3BlushGardenSet],
     fabric: "Soft blended fabric",
     origin: "Lucknow, India",
   },
