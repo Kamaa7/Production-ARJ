@@ -216,7 +216,7 @@ export const products: Product[] = [
   },
   {
     slug: "co-ord-set-1599",
-    name: "Mustard Co-ord-set",
+    name: "Co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,599",
     shortDescription: "Classic brown co-ord set with a soft ivory hijab drape.",
@@ -229,7 +229,7 @@ export const products: Product[] = [
   },
   {
     slug: "co-ord-set-999",
-    name: "co-ord-set 999",
+    name: "co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 999",
     shortDescription: "Minimal maroon co-ord set for everyday wear.",
@@ -242,7 +242,7 @@ export const products: Product[] = [
   },
   {
     slug: "hero-3-blush-garden",
-    name: "hero-3-blush-garden",
+    name: "White co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,399",
     shortDescription: "Soft blush garden co-ord set with a light drape.",
@@ -268,7 +268,7 @@ export const products: Product[] = [
   },
   {
     slug: "kashmiri-stole",
-    name: "Co-ord-set",
+    name: "Black co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
     shortDescription: "Black co-ord with a fluid drape and minimal detailing.",
@@ -281,7 +281,7 @@ export const products: Product[] = [
   },
   {
     slug: "ochre-cotton-coord",
-    name: "Co-ord-set",
+    name: "Mustard co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
     shortDescription: "Handwoven ochre cotton kurta with carved horn buttons.",
@@ -294,7 +294,7 @@ export const products: Product[] = [
   },
   {
     slug: "navy-windowpane-coord",
-    name: "Co-ord-set",
+    name: "Blue check co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
     shortDescription: "Brushed cotton kurta in navy with rust windowpane check.",
