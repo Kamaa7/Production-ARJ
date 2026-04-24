@@ -216,7 +216,7 @@ export const products: Product[] = [
   },
   {
     slug: "co-ord-set-1599",
-    name: "Co-ord-set",
+    name: "Woolen co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,599",
     shortDescription: "Classic brown co-ord set with a soft ivory hijab drape.",
