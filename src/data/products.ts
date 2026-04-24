@@ -28,6 +28,7 @@ import coordOchreDetail from "@/assets/coord-ochre-detail.jpg";
 import coordNavyFull from "@/assets/coord-navy-full.jpg";
 import lavenderCoordSet from "@/assets/lavender-co-ord-set.png";
 import coordSet1599 from "@/assets/Co-ord-set 1599.jpg";
+import coordSet999 from "@/assets/co-ord-set 999.jpg";
 
 export type Product = {
   slug: string;
@@ -222,6 +223,19 @@ export const products: Product[] = [
       "A modest brown co-ord set finished with subtle handwork and paired with an ivory drape. A quiet, everyday silhouette designed for comfort and movement.",
     image: coordSet1599,
     gallery: [coordSet1599],
+    fabric: "Soft blended fabric",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "co-ord-set-999",
+    name: "co-ord-set 999",
+    category: "Co-ord Sets",
+    price: "₹ 999",
+    shortDescription: "Minimal maroon co-ord set for everyday wear.",
+    description:
+      "A clean, straight-cut maroon co-ord set with soft drape and relaxed tailoring, designed for comfort across day-long wear.",
+    image: coordSet999,
+    gallery: [coordSet999],
     fabric: "Soft blended fabric",
     origin: "Lucknow, India",
   },
