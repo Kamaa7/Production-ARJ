@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
 import SmoothImage from "@/components/site/SmoothImage";
-import lookSageRose from "@/assets/look-sage-rose.jpg";
-import lookNoirZardozi from "@/assets/look-noir-zardozi.jpg";
-import lookLeopard from "@/assets/look-leopard.jpg";
+import hero1CrimsonZardoziJournal from "@/assets/hero-1-crimson-zardozi-journal.png";
+import hero7LavenderZardoziJournal from "@/assets/hero-7-lavender-zardozi-journal.png";
+import hero8RustZardoziJournal from "@/assets/hero-8-rust-zardozi-journal.png";
 import lookNoirGarden from "@/assets/look-noir-garden.jpg";
 
 const entries = [
-  { n: "I", title: "On the hijab, considered", date: "March 2025", excerpt: "Notes on covering with intention — the drape, the weight, the gesture.", image: lookSageRose },
-  { n: "II", title: "A copper thread", date: "February 2025", excerpt: "An afternoon with our zardozi karigar, edging a black hijab in the old quarter.", image: lookNoirZardozi },
-  { n: "III", title: "Print, soft", date: "January 2025", excerpt: "Why the leopard, and why now — a study in earth tones for the modest wardrobe.", image: lookLeopard },
-  { n: "IV", title: "The black hijab", date: "December 2024", excerpt: "On the discipline of a single colour at the temple, worn well.", image: lookNoirGarden },
+  { n: "I", title: "On the hijab, considered", date: "March 2025", excerpt: "Notes on covering with intention — the drape, the weight, the gesture.", image: hero1CrimsonZardoziJournal },
+  { n: "II", title: "A copper thread", date: "February 2025", excerpt: "An afternoon with our zardozi karigar, edging a black hijab in the old quarter.", image: hero7LavenderZardoziJournal },
+  { n: "III", title: "Print, soft", date: "January 2025", excerpt: "Why the leopard, and why now — a study in earth tones for the modest wardrobe.", image: hero8RustZardoziJournal },
+  { n: "IV", title: "The black co-ord set", date: "December 2024", excerpt: "On the discipline of a single colour at the temple, worn well.", image: lookNoirGarden },
 ];
 
 const Journal = () => {
