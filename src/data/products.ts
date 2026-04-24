@@ -27,6 +27,7 @@ import coordNavyDetail from "@/assets/coord-navy-detail.jpg";
 import coordOchreDetail from "@/assets/coord-ochre-detail.jpg";
 import coordNavyFull from "@/assets/coord-navy-full.jpg";
 import lavenderCoordSet from "@/assets/lavender-co-ord-set.png";
+import coordSet1599 from "@/assets/Co-ord-set 1599.jpg";
 
 export type Product = {
   slug: string;
@@ -209,6 +210,19 @@ export const products: Product[] = [
     image: lookSageProfile,
     gallery: [lookSageProfile, lookSageRose],
     fabric: "Cotton rayon · Cotton dupatta",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "co-ord-set-1599",
+    name: "Co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 1,599",
+    shortDescription: "Classic brown co-ord set with a soft ivory hijab drape.",
+    description:
+      "A modest brown co-ord set finished with subtle handwork and paired with an ivory drape. A quiet, everyday silhouette designed for comfort and movement.",
+    image: coordSet1599,
+    gallery: [coordSet1599],
+    fabric: "Soft blended fabric",
     origin: "Lucknow, India",
   },
   {
