@@ -31,7 +31,7 @@ const Index = () => {
   const heroSlides = [
     { src: hero1, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
     { src: hero2, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
-    { src: hero3, alt: "ARJ — Co-ord set, Spring MMXXV" },
+    { src: hero3, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
     { src: hero4, alt: "ARJ — Co-ord set, Spring MMXXV" },
     { src: hero5, alt: "ARJ — Co-ord set, Spring MMXXV" },
     { src: hero6, alt: "ARJ — Co-ord set, Spring MMXXV" },
