@@ -29,14 +29,14 @@ const Index = () => {
       return 0;
     });
   const heroSlides = [
-    { src: hero1, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
-    { src: hero2, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
-    { src: hero3, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
-    { src: hero4, alt: "ARJ — Co-ord set, Spring MMXXV" },
-    { src: hero5, alt: "ARJ — Co-ord set, Spring MMXXV" },
-    { src: hero6, alt: "ARJ — Co-ord set, Spring MMXXV" },
-    { src: hero7, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
-    { src: hero8, alt: "ARJ — Zardozi Hijabs, Spring MMXXV" },
+    { src: hero1, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
+    { src: hero2, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
+    { src: hero3, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
+    { src: hero4, alt: "ARJ — Co-ord set, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
+    { src: hero5, alt: "ARJ — Co-ord set, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
+    { src: hero6, alt: "ARJ — Co-ord set, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
+    { src: hero7, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
+    { src: hero8, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
   ];
   const [slide, setSlide] = useState(0);
 
@@ -78,7 +78,7 @@ const Index = () => {
             transition={{ duration: 1.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="eyebrow text-ivory/70 mb-6 sm:mb-8"
           >
-            — The Co-ord-set, Spring MMXXV
+            {heroSlides[slide].eyebrow}
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 32 }}
@@ -96,7 +96,7 @@ const Index = () => {
             className="mt-10 sm:mt-12 flex flex-wrap items-center gap-6 sm:gap-12"
           >
             <Link to="/collections" className="link-underline text-[0.68rem] uppercase tracking-[0.32em] sm:tracking-[0.36em] text-ivory">
-              The Co-ord-set Edit
+              {heroSlides[slide].cta}
             </Link>
             <span className="hidden sm:block h-px w-10 bg-ivory/40" aria-hidden />
             <Link to="/about" className="link-underline text-[0.68rem] uppercase tracking-[0.32em] sm:tracking-[0.36em] text-ivory/70">
