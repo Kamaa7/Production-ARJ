@@ -30,6 +30,8 @@ import lavenderCoordSet from "@/assets/lavender-co-ord-set.png";
 import coordSet1599 from "@/assets/Co-ord-set 1599.jpg";
 import coordSet999 from "@/assets/co-ord-set 999.jpg";
 import hero3BlushGardenSet from "@/assets/hero-3-blush-garden.png";
+import velvetJetBlackKurtaSet from "@/assets/velvet-jet-black-kurta-set.png";
+import skyBlueKurtaSet from "@/assets/sky-blue-kurta-set.png";
 
 export type Product = {
   slug: string;
@@ -303,6 +305,32 @@ export const products: Product[] = [
     image: coordNavyCheck,
     gallery: [coordNavyCheck, coordNavyFull, coordNavyDetail],
     fabric: "Brushed cotton · Yarn-dyed check",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "velvet-jet-black-kurta-set",
+    name: "Velvet Jet Black Kurta set",
+    category: "Kurta Sets",
+    price: "₹ 1,699",
+    shortDescription: "Jet black velvet kurta set with embellished neckline details.",
+    description:
+      "A rich jet black velvet kurta set, finished with shimmering neckline and cuff accents for an elevated evening look while retaining a modest silhouette.",
+    image: velvetJetBlackKurtaSet,
+    gallery: [velvetJetBlackKurtaSet],
+    fabric: "Velvet blend",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "sky-blue-kurta-set",
+    name: "sky blue kurta set",
+    category: "Kurta Sets",
+    price: "₹ 1,399",
+    shortDescription: "Sky blue kurta set with soft gathers and minimal trim.",
+    description:
+      "A light sky blue kurta set with soft front gathers and clean finishing, designed for everyday ease with a graceful drape.",
+    image: skyBlueKurtaSet,
+    gallery: [skyBlueKurtaSet],
+    fabric: "Soft cotton blend",
     origin: "Lucknow, India",
   },
 ];
