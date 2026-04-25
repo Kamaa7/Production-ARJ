@@ -32,7 +32,7 @@ const Index = () => {
     { src: hero1, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
     { src: hero2, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
     { src: hero3, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
-    { src: hero4, alt: "ARJ — Co-ord set, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
+    { src: hero4, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
     { src: hero5, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
     { src: hero6, alt: "ARJ — Co-ord set, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
     { src: hero7, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
