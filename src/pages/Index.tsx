@@ -78,7 +78,7 @@ const Index = () => {
             transition={{ duration: 1.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="eyebrow text-ivory/70 mb-6 sm:mb-8"
           >
-            — Zardozi Hijabs, Spring MMXXV
+            — The Co-ord-set, Spring MMXXV
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 32 }}
@@ -96,7 +96,7 @@ const Index = () => {
             className="mt-10 sm:mt-12 flex flex-wrap items-center gap-6 sm:gap-12"
           >
             <Link to="/collections" className="link-underline text-[0.68rem] uppercase tracking-[0.32em] sm:tracking-[0.36em] text-ivory">
-              The Hijab Edit
+              The Co-ord-set Edit
             </Link>
             <span className="hidden sm:block h-px w-10 bg-ivory/40" aria-hidden />
             <Link to="/about" className="link-underline text-[0.68rem] uppercase tracking-[0.32em] sm:tracking-[0.36em] text-ivory/70">
