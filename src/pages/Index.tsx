@@ -29,7 +29,13 @@ const Index = () => {
       return 0;
     });
   const heroSlides = [
-    { src: hero1, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
+    {
+      src: hero1,
+      alt: "ARJ — Zardozi Hijabs, Spring MMXXV",
+      eyebrow: "— Zardozi Hijabs, Spring MMXXV",
+      cta: "The Hijab Edit",
+      imageClassName: "object-[50%_22%] md:object-center",
+    },
     { src: hero2, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
     { src: hero3, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
     { src: hero4, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
@@ -65,7 +71,7 @@ const Index = () => {
               opacity: { duration: reduceMotion ? 0 : 1.2, ease: [0.22, 1, 0.36, 1] },
               scale: { duration: reduceMotion ? 0 : 7, ease: "linear" },
             }}
-            className="absolute inset-0 h-full w-full object-cover object-[60%_center] md:object-center"
+            className={`absolute inset-0 h-full w-full object-cover ${heroSlides[slide].imageClassName ?? "object-[60%_center] md:object-center"}`}
             style={{ willChange: "transform, opacity" }}
           />
         </AnimatePresence>
