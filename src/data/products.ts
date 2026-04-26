@@ -196,7 +196,7 @@ export const products: Product[] = [
     slug: "pinstripe-noir-set",
     name: "Co-ord-set",
     category: "Co-ord Sets",
-    price: "₹ 1,499",
+    price: "₹ 1,199",
     shortDescription: "Tailored pinstripe co-ord in fluid viscose.",
     description:
       "A relaxed two-piece in inky viscose, traced through with fine ivory pinstripes. A long shirt-tunic over wide-leg trousers — quietly architectural.",
