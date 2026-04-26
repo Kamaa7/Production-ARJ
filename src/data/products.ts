@@ -18,6 +18,7 @@ import zardoziWhisper from "@/assets/zardozi-crimson-whisper.jpg";
 import zardoziCamel from "@/assets/zardozi-camel-repose.jpg";
 import zardoziDetail from "@/assets/zardozi-crimson-detail.jpg";
 import zardoziOrangePortrait from "@/assets/zardozi-orange-portrait.jpeg";
+import mustardZardoziHijab from "@/assets/mustard-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
 import coordOchreCuff from "@/assets/coord-ochre-cuff.jpg";
@@ -97,6 +98,19 @@ export const products: Product[] = [
     image: zardoziOrangePortrait,
     gallery: [zardoziOrangePortrait],
     fabric: "Pure georgette · Zardozi handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "mustard-zardozi-hijab",
+    name: "Mustard Zardozi Hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 799",
+    shortDescription: "Mustard hijab with delicate zardozi detailing on the edge.",
+    description:
+      "A rich mustard hijab finished with fine zardozi embellishment along the temple edge. Light to drape and designed for festive as well as everyday wear.",
+    image: mustardZardoziHijab,
+    gallery: [mustardZardoziHijab],
+    fabric: "Soft georgette blend · Zardozi work",
     origin: "Lucknow, India",
   },
   {
