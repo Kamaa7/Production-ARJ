@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
@@ -11,16 +11,12 @@ import lookSageRose from "@/assets/look-sage-rose.jpg";
 import lookNoirZardozi from "@/assets/look-lavender-zardozi.jpg";
 import lookOchreMagenta from "@/assets/look-ochre-magenta.jpg";
 import hero1 from "@/assets/hero-1-crimson-zardozi-new.jpg";
-import hero2 from "@/assets/hero-2-camel-zardozi.jpg";
-import hero3 from "@/assets/hero-3-blush-garden.jpg";
-import hero4 from "@/assets/hero-4-magenta-ochre.jpg";
-import hero5 from "@/assets/hero-5-navy-check.jpg";
-import hero6 from "@/assets/hero-6-zebra-kaftan.jpg";
-import hero7 from "@/assets/hero-7-lavender-zardozi.jpg";
-import hero8 from "@/assets/hero-8-rust-zardozi.jpg";
+import heroShowcaseVideo from "@/assets/IMG_3715.mp4";
 
 const Index = () => {
   const reduceMotion = useReducedMotion();
+  const [showHeroFallback, setShowHeroFallback] = useState(false);
+  const heroVideoRef = useRef<HTMLVideoElement | null>(null);
   const hijabs = products
     .filter((p) => p.category === "Zardozi Hijabs" || p.category === "Hijabs" || p.category === "Co-ord Sets")
     .sort((a, b) => {
@@ -28,55 +24,54 @@ const Index = () => {
       if (b.slug === "co-ord-set") return 1;
       return 0;
     });
-  const heroSlides = [
-    {
-      src: hero1,
-      alt: "ARJ — Zardozi Hijabs, Spring MMXXV",
-      eyebrow: "— Zardozi Hijabs, Spring MMXXV",
-      cta: "The Hijab Edit",
-      imageClassName: "object-[50%_35%] md:object-[50%_30%]",
-      scaleFrom: 1,
-      scaleTo: 1,
-    },
-    { src: hero2, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
-    { src: hero3, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
-    { src: hero4, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
-    { src: hero5, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
-    { src: hero6, alt: "ARJ — Co-ord set, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
-    { src: hero7, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
-    { src: hero8, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
-  ];
-  const [slide, setSlide] = useState(0);
 
   useEffect(() => {
-    if (reduceMotion) return;
-    const id = setInterval(() => setSlide((s) => (s + 1) % heroSlides.length), 5500);
-    return () => clearInterval(id);
-  }, [heroSlides.length, reduceMotion]);
+    if (!heroVideoRef.current) return;
+    const video = heroVideoRef.current;
+    video.muted = true;
+    const tryPlay = async () => {
+      try {
+        await video.play();
+      } catch {
+        // Keep poster/fallback visible if autoplay is blocked.
+      }
+    };
+    void tryPlay();
+  }, []);
 
   return (
     <Layout>
       {/* HERO */}
       <section className="relative h-[100svh] -mt-20 md:-mt-24 overflow-hidden bg-ink">
-        <AnimatePresence mode="sync">
+        {!showHeroFallback ? (
+          <video
+            ref={heroVideoRef}
+            className="absolute inset-0 h-full w-full object-cover object-[58%_center] sm:object-center"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            poster={hero1}
+            onError={() => setShowHeroFallback(true)}
+          >
+            <source src={heroShowcaseVideo} type="video/mp4" />
+            <source src="/hero-showcase-video.mp4" type="video/mp4" />
+          </video>
+        ) : (
           <motion.img
-            key={slide}
-            src={heroSlides[slide].src}
-            alt={heroSlides[slide].alt}
+            src={hero1}
+            alt="ARJ — Zardozi Hijabs, Spring MMXXV"
             loading="eager"
             decoding="async"
             fetchPriority="high"
-            initial={reduceMotion ? false : { scale: heroSlides[slide].scaleFrom ?? 1.1, opacity: 0 }}
-            animate={{ scale: reduceMotion ? 1 : heroSlides[slide].scaleTo ?? 1.02, opacity: 1 }}
-            exit={reduceMotion ? undefined : { opacity: 0 }}
-            transition={{
-              opacity: { duration: reduceMotion ? 0 : 1.2, ease: [0.22, 1, 0.36, 1] },
-              scale: { duration: reduceMotion ? 0 : 7, ease: "linear" },
-            }}
-            className={`absolute inset-0 h-full w-full object-cover ${heroSlides[slide].imageClassName ?? "object-[60%_center] md:object-center"}`}
+            initial={reduceMotion ? false : { scale: 1.05, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: reduceMotion ? 0 : 1.2, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute inset-0 h-full w-full object-cover object-[50%_22%] md:object-center"
             style={{ willChange: "transform, opacity" }}
           />
-        </AnimatePresence>
+        )}
         <div className="absolute inset-0 bg-gradient-to-b from-ink/45 via-ink/15 to-ink/70" />
 
         <div className="relative z-10 h-full container-luxe flex flex-col justify-end pb-20 sm:pb-24 md:pb-32 text-ivory">
@@ -86,7 +81,7 @@ const Index = () => {
             transition={{ duration: 1.6, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
             className="eyebrow text-ivory/70 mb-6 sm:mb-8"
           >
-            {heroSlides[slide].eyebrow}
+            — Zardozi Hijabs, Spring MMXXV
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 32 }}
@@ -104,7 +99,7 @@ const Index = () => {
             className="mt-10 sm:mt-12 flex flex-wrap items-center gap-6 sm:gap-12"
           >
             <Link to="/collections" className="link-underline text-[0.68rem] uppercase tracking-[0.32em] sm:tracking-[0.36em] text-ivory">
-              {heroSlides[slide].cta}
+              The Hijab Edit
             </Link>
             <span className="hidden sm:block h-px w-10 bg-ivory/40" aria-hidden />
             <Link to="/about" className="link-underline text-[0.68rem] uppercase tracking-[0.32em] sm:tracking-[0.36em] text-ivory/70">
@@ -113,23 +108,6 @@ const Index = () => {
           </motion.div>
         </div>
 
-        {/* Slide indicators */}
-        <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 z-10 flex items-center gap-3">
-          {heroSlides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setSlide(i)}
-              aria-label={`Go to slide ${i + 1}`}
-              className="h-px w-8 sm:w-10 bg-ivory/30 overflow-hidden"
-            >
-              <span
-                className={`block h-full bg-ivory transition-transform duration-700 ease-out origin-left ${
-                  i === slide ? "scale-x-100" : "scale-x-0"
-                }`}
-              />
-            </button>
-          ))}
-        </div>
       </section>
 
       {/* PHILOSOPHY */}

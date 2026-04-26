@@ -4,7 +4,8 @@ import Reveal from "@/components/site/Reveal";
 import ProductCard from "@/components/site/ProductCard";
 import { products } from "@/data/products";
 
-const categories = ["All", "Zardozi Hijabs", "Hijabs", "Co-ord Sets", "Kurta Sets", "Kaftans", "Abayas"] as const;
+const baseCategories = ["Zardozi Hijabs", "Hijabs", "Co-ord Sets", "Kurta Sets", "Kaftans", "Abayas"] as const;
+const categories = ["All", ...baseCategories.filter((c) => products.some((p) => p.category === c))] as const;
 
 const categoryOrder: Record<string, number> = {
   "Zardozi Hijabs": 0,
