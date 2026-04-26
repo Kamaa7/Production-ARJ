@@ -34,6 +34,7 @@ import coordSet999 from "@/assets/co-ord-set 999.jpg";
 import hero3BlushGardenSet from "@/assets/hero-3-blush-garden.png";
 import velvetJetBlackKurtaSet from "@/assets/velvet-jet-black-kurta-set.png";
 import skyBlueKurtaSet from "@/assets/sky-blue-kurta-set.png";
+import greenCoOrdSet from "@/assets/green-co-ord-set.png";
 
 export type Product = {
   slug: string;
@@ -294,6 +295,19 @@ export const products: Product[] = [
     image: lavenderCoordSet,
     gallery: [lavenderCoordSet],
     fabric: "Soft blended fabric · Sheer overlay",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "green-co-ord-set",
+    name: "Green co-ord-set",
+    category: "Co-ord Sets",
+    price: "₹ 999",
+    shortDescription: "Deep green rayon co-ord set with a clean, effortless silhouette.",
+    description:
+      "A two-piece green co-ord set in smooth rayon, tailored with a relaxed shirt and easy straight pants for polished all-day comfort and a modern modest look.",
+    image: greenCoOrdSet,
+    gallery: [greenCoOrdSet],
+    fabric: "Rayon",
     origin: "Lucknow, India",
   },
   {
