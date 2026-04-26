@@ -47,13 +47,27 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-border/40">
-        <div className="container-luxe py-8 flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-[0.62rem] uppercase tracking-[0.36em] text-muted-foreground">
-            © {new Date().getFullYear()} The House of ARJ
-          </p>
-          <p className="text-[0.62rem] uppercase tracking-[0.36em] text-muted-foreground">
-            All rights reserved
-          </p>
+        <div className="container-luxe py-8 flex flex-col items-center gap-4">
+          <a
+            href="https://github.com/Kamaa7"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="group inline-flex items-center gap-2 rounded-full border border-border/60 bg-background/60 px-3.5 py-1.5 text-[0.55rem] uppercase tracking-[0.22em] text-foreground shadow-sm backdrop-blur-sm transition-all duration-500 hover:border-foreground/30 hover:bg-background hover:shadow-md"
+          >
+            <span className="text-muted-foreground transition-colors duration-500 group-hover:text-foreground">
+              Developed by
+            </span>
+            <span className="h-px w-4 bg-border/80 transition-colors duration-500 group-hover:bg-foreground/30" aria-hidden />
+            <span className="font-medium tracking-[0.16em]">GitHub · Kamaa7</span>
+          </a>
+          <div className="flex w-full flex-col items-center justify-between gap-3 text-center md:flex-row md:text-left">
+            <p className="text-[0.62rem] uppercase tracking-[0.36em] text-muted-foreground">
+              © {new Date().getFullYear()} The House of ARJ
+            </p>
+            <p className="text-[0.62rem] uppercase tracking-[0.36em] text-muted-foreground">
+              All rights reserved
+            </p>
+          </div>
         </div>
       </div>
     </footer>
