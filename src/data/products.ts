@@ -314,12 +314,12 @@ export const products: Product[] = [
     name: "Mustard co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
-    shortDescription: "Handwoven ochre cotton kurta with carved horn buttons.",
+    shortDescription: "Handwoven woolen kurta with carved horn buttons.",
     description:
       "A long ochre kurta in handwoven cotton, fastened with carved horn buttons and gathered at the cuff. Cut full and unhurried — for the slow days, the long walks, the warm light of late afternoon.",
     image: coordOchreMagentaPose,
     gallery: [coordOchreMagentaPose, coordOchreCuff, coordOchreFull, coordOchreDetail],
-    fabric: "Handwoven cotton · Horn buttons",
+    fabric: "woolen",
     origin: "Lucknow, India",
   },
   {
