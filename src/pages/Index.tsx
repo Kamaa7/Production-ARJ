@@ -11,7 +11,7 @@ import lookSageRose from "@/assets/look-sage-rose.jpg";
 import lookNoirZardozi from "@/assets/look-lavender-zardozi.jpg";
 import lookOchreMagenta from "@/assets/look-ochre-magenta.jpg";
 import hero1 from "@/assets/hero-1-crimson-zardozi-new.jpg";
-import heroShowcaseVideo from "@/assets/IMG_3715.mp4";
+import heroShowcaseVideo from "@/assets/img-3715_DHnHgMrd.mp4";
 
 const Index = () => {
   const reduceMotion = useReducedMotion();
