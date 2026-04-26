@@ -183,7 +183,7 @@ export const products: Product[] = [
     slug: "zebra-kaftan",
     name: "Kaftan Set",
     category: "Kaftans",
-    price: "₹ 1,499",
+    price: "₹ 1,199",
     shortDescription: "Hand-painted zebra kaftan in ink and ivory.",
     description:
       "A wide-cut kaftan in flowing satin, hand-screened in painterly zebra strokes. Bracelet sleeves and a buttoned placket. Worn with a deep aubergine hijab.",
@@ -209,7 +209,7 @@ export const products: Product[] = [
     slug: "leopard-kaftan",
     name: "Kaftan Set",
     category: "Kaftans",
-    price: "₹ 1,499",
+    price: "₹ 1,199",
     shortDescription: "Co-ord kaftan in painterly leopard print.",
     description:
       "A flowing two-piece in soft viscose, cut as a draped kaftan over wide trousers. The print is hand-screened in earth tones — sand, ochre, ink.",
