@@ -327,12 +327,12 @@ export const products: Product[] = [
     name: "Blue check co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
-    shortDescription: "Brushed cotton kurta in navy with rust windowpane check.",
+    shortDescription: "Brushed woolen kurta in navy with rust windowpane check.",
     description:
-      "A relaxed shirt-kurta in brushed cotton, woven in deep navy and traced through with a fine rust windowpane check. Patch pockets, dropped shoulders, mother-of-pearl buttons. Quietly tailored for the cooler months.",
+      "A relaxed shirt-kurta in brushed woolen fabric, rendered in deep navy and traced with a fine rust windowpane check. Designed with patch pockets, dropped shoulders, and finished with elegant Canadian pearl buttons. Quietly tailored for the cooler months.",
     image: coordNavyCheck,
     gallery: [coordNavyCheck, coordNavyFull, coordNavyDetail],
-    fabric: "Brushed cotton · Yarn-dyed check",
+    fabric: "woolen",
     origin: "Lucknow, India",
   },
   {
