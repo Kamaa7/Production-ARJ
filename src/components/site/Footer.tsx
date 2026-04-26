@@ -1,12 +1,22 @@
 import { Link } from "react-router-dom";
 import logoMark from "@/assets/arj-mark.png";
+import SmoothImage from "@/components/site/SmoothImage";
 
 const Footer = () => {
   return (
     <footer className="mt-40 border-t border-border/40">
       <div className="container-luxe py-24 grid gap-16 md:grid-cols-12">
         <div className="md:col-span-5">
-          <img src={logoMark} alt="ARJ" className="h-10 w-auto mb-8" />
+          <SmoothImage
+            src={logoMark}
+            alt="ARJ"
+            eager
+            width={96}
+            height={96}
+            placeholderClassName="bg-transparent"
+            wrapperClassName="h-10 w-10 mb-8 bg-transparent overflow-visible"
+            className="h-full w-full object-contain"
+          />
           <p className="max-w-sm text-sm text-muted-foreground leading-[1.95] font-light">
             The House of ARJ. A small atelier of luxury hijabs and modest couture, made slowly, by hand — in Lucknow, India.
           </p>

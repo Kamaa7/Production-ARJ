@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Product } from "@/data/products";
@@ -31,4 +32,4 @@ const ProductCard = ({ product, index = 0 }: { product: Product; index?: number 
   );
 };
 
-export default ProductCard;
+export default memo(ProductCard);

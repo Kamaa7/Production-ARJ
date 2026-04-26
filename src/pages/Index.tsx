@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import { Link } from "react-router-dom";
 import Layout from "@/components/site/Layout";
@@ -17,13 +17,22 @@ const Index = () => {
   const reduceMotion = useReducedMotion();
   const [showHeroFallback, setShowHeroFallback] = useState(false);
   const heroVideoRef = useRef<HTMLVideoElement | null>(null);
-  const hijabs = products
-    .filter((p) => p.category === "Zardozi Hijabs" || p.category === "Hijabs" || p.category === "Co-ord Sets")
-    .sort((a, b) => {
-      if (a.slug === "co-ord-set") return -1;
-      if (b.slug === "co-ord-set") return 1;
-      return 0;
-    });
+  const hijabs = useMemo(
+    () =>
+      products
+        .filter(
+          (p) =>
+            p.category === "Zardozi Hijabs" ||
+            p.category === "Hijabs" ||
+            p.category === "Co-ord Sets"
+        )
+        .sort((a, b) => {
+          if (a.slug === "co-ord-set") return -1;
+          if (b.slug === "co-ord-set") return 1;
+          return 0;
+        }),
+    []
+  );
 
   useEffect(() => {
     if (!heroVideoRef.current) return;
@@ -59,18 +68,21 @@ const Index = () => {
             <source src="/hero-showcase-video.mp4" type="video/mp4" />
           </video>
         ) : (
-          <motion.img
-            src={hero1}
-            alt="ARJ — Zardozi Hijabs, Spring MMXXV"
-            loading="eager"
-            decoding="async"
-            fetchPriority="high"
+          <motion.div
             initial={reduceMotion ? false : { scale: 1.05, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: reduceMotion ? 0 : 1.2, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute inset-0 h-full w-full object-cover object-[50%_22%] md:object-center"
             style={{ willChange: "transform, opacity" }}
-          />
+            className="absolute inset-0 h-full w-full"
+          >
+            <SmoothImage
+              src={hero1}
+              alt="ARJ — Zardozi Hijabs, Spring MMXXV"
+              eager
+              wrapperClassName="absolute inset-0 h-full w-full"
+              className="absolute inset-0 h-full w-full object-cover object-[50%_22%] md:object-center"
+            />
+          </motion.div>
         )}
         <div className="absolute inset-0 bg-gradient-to-b from-ink/45 via-ink/15 to-ink/70" />
 

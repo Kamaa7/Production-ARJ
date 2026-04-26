@@ -69,7 +69,12 @@ const Product = () => {
                     active === i ? "opacity-100" : "opacity-50 hover:opacity-100"
                   }`}
                 >
-                  <img src={g} alt="" loading="lazy" className="h-full w-full object-cover" />
+                  <SmoothImage
+                    src={g}
+                    alt={`${product.name} thumbnail ${i + 1}`}
+                    wrapperClassName="h-full w-full"
+                    className="absolute inset-0 h-full w-full object-cover"
+                  />
                 </button>
               ))}
             </div>
