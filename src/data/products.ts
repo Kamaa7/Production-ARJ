@@ -158,12 +158,12 @@ export const products: Product[] = [
     name: "Co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
-    shortDescription: "Black tunic with copper zardozi placket.",
+    shortDescription: "Black co-ord-set",
     description:
-      "A long-line tunic in midnight rayon, traced down the placket with copper-thread zardozi and finished with antique brass buttons. Worn here with a printed kashmiri stole.",
+      "A long-line tunic in midnight rayon, traced down the placket and finished with antique brass buttons. Worn here with a printed kashmiri stole.",
     image: lookNoirZardozi,
     gallery: [lookNoirZardozi, lookNoirGarden, lookNoirFountain],
-    fabric: "Rayon · Zardozi handwork",
+    fabric: "Rayon",
     origin: "Lucknow, India",
   },
   {
