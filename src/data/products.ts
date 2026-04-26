@@ -189,7 +189,7 @@ export const products: Product[] = [
       "A wide-cut kaftan in flowing satin, hand-screened in painterly zebra strokes. Bracelet sleeves and a buttoned placket. Worn with a deep aubergine hijab.",
     image: lookZebraKaftan,
     gallery: [lookZebraKaftan],
-    fabric: "Satin viscose",
+    fabric: "Rayon",
     origin: "Jaipur, India",
   },
   {
@@ -215,7 +215,7 @@ export const products: Product[] = [
       "A flowing two-piece in soft viscose, cut as a draped kaftan over wide trousers. The print is hand-screened in earth tones — sand, ochre, ink.",
     image: lookLeopard,
     gallery: [lookLeopard],
-    fabric: "Viscose",
+    fabric: "Rayon",
     origin: "Jaipur, India",
   },
   {
