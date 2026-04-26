@@ -127,7 +127,7 @@ const Product = () => {
               </div>
               <div className="flex justify-between gap-6">
                 <dt className="text-muted-foreground">Delivery</dt>
-                <dd className="text-right">Complimentary, worldwide</dd>
+                <dd className="text-right">Delivery PAN India Delivery</dd>
               </div>
             </dl>
           </Reveal>
