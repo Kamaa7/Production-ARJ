@@ -34,7 +34,9 @@ const Index = () => {
       alt: "ARJ — Zardozi Hijabs, Spring MMXXV",
       eyebrow: "— Zardozi Hijabs, Spring MMXXV",
       cta: "The Hijab Edit",
-      imageClassName: "object-[50%_22%] md:object-center",
+      imageClassName: "object-[50%_35%] md:object-[50%_30%]",
+      scaleFrom: 1,
+      scaleTo: 1,
     },
     { src: hero2, alt: "ARJ — Zardozi Hijabs, Spring MMXXV", eyebrow: "— Zardozi Hijabs, Spring MMXXV", cta: "The Hijab Edit" },
     { src: hero3, alt: "ARJ — The Co-ord-set, Spring MMXXV", eyebrow: "— The Co-ord-set, Spring MMXXV", cta: "The Co-ord-set Edit" },
@@ -64,8 +66,8 @@ const Index = () => {
             loading="eager"
             decoding="async"
             fetchPriority="high"
-            initial={reduceMotion ? false : { scale: 1.1, opacity: 0 }}
-            animate={{ scale: reduceMotion ? 1 : 1.02, opacity: 1 }}
+            initial={reduceMotion ? false : { scale: heroSlides[slide].scaleFrom ?? 1.1, opacity: 0 }}
+            animate={{ scale: reduceMotion ? 1 : heroSlides[slide].scaleTo ?? 1.02, opacity: 1 }}
             exit={reduceMotion ? undefined : { opacity: 0 }}
             transition={{
               opacity: { duration: reduceMotion ? 0 : 1.2, ease: [0.22, 1, 0.36, 1] },
