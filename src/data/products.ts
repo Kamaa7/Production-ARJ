@@ -19,6 +19,7 @@ import zardoziCamel from "@/assets/zardozi-camel-repose.jpg";
 import zardoziDetail from "@/assets/zardozi-crimson-detail.jpg";
 import zardoziOrangePortrait from "@/assets/zardozi-orange-portrait.jpeg";
 import mustardZardoziHijab from "@/assets/mustard-zardozi-hijab.png";
+import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
 import coordOchreCuff from "@/assets/coord-ochre-cuff.jpg";
@@ -110,6 +111,19 @@ export const products: Product[] = [
       "A rich mustard hijab finished with fine zardozi embellishment along the temple edge. Light to drape and designed for festive as well as everyday wear.",
     image: mustardZardoziHijab,
     gallery: [mustardZardoziHijab],
+    fabric: "Soft georgette blend · Zardozi work",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "beige-color-zardozi-hijab",
+    name: "Beige Color Zardozi Hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 799",
+    shortDescription: "Beige hijab with delicate zardozi embellishment at the edge.",
+    description:
+      "A soft beige hijab accented with hand-finished zardozi work along the side edge, designed for a refined look across festive and everyday styling.",
+    image: beigeColorZardoziHijab,
+    gallery: [beigeColorZardoziHijab],
     fabric: "Soft georgette blend · Zardozi work",
     origin: "Lucknow, India",
   },
