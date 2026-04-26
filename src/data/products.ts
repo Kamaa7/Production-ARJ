@@ -145,12 +145,12 @@ export const products: Product[] = [
     name: "Co-ord-set",
     category: "Co-ord Sets",
     price: "₹ 1,499",
-    shortDescription: "Hand-embroidered chikankari kurta with rose dupatta.",
+    shortDescription: "The co-ord-set with canadian pearl",
     description:
-      "A three-piece composition in pistachio rayon. The kurta is hand-embroidered in Lucknowi chikankari, finished with a rose-dyed cotton dupatta scattered in ivory floral threadwork.",
+      "A two-piece co-ord set in pistachio rayon, crafted in plain fabric for a sleek and effortless look, finished with elegant Canadian pearl detailing for a refined, contemporary finish.",
     image: lookSageRose,
     gallery: [lookSageRose, lookSageProfile],
-    fabric: "Cotton rayon · Cotton dupatta",
+    fabric: "Cotton rayon",
     origin: "Lucknow, India",
   },
   {
