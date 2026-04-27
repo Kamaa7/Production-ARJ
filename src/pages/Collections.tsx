@@ -2,6 +2,7 @@ import { useState } from "react";
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
 import ProductCard from "@/components/site/ProductCard";
+import { useSeo } from "@/hooks/useSeo";
 import { products } from "@/data/products";
 
 const baseCategories = ["Zardozi Hijabs", "Hijabs", "Co-ord Sets", "Kurta Sets", "Kaftans", "Abayas"] as const;
@@ -17,6 +18,13 @@ const categoryOrder: Record<string, number> = {
 };
 
 const Collections = () => {
+  useSeo({
+    title: "Hijab & Modest Wear Collections in India | ARJ",
+    description:
+      "Explore ARJ collections of zardozi hijabs, co-ord sets, kaftans, and kurta sets. Thoughtfully crafted modest fashion for women in India.",
+    path: "/collections",
+  });
+
   const [active, setActive] = useState<(typeof categories)[number]>("All");
   const filtered =
     active === "All"

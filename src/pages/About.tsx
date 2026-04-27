@@ -1,10 +1,18 @@
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
 import SmoothImage from "@/components/site/SmoothImage";
+import { useSeo } from "@/hooks/useSeo";
 import lookNoirGarden from "@/assets/look-noir-garden.jpg";
 import lookSageProfile from "@/assets/look-sage-profile.jpg";
 
 const About = () => {
+  useSeo({
+    title: "About The House of ARJ | Luxury Modest Fashion India",
+    description:
+      "Learn about The House of ARJ, a Lucknow atelier creating handcrafted luxury hijabs and modest couture with a slow, thoughtful design philosophy.",
+    path: "/about",
+  });
+
   return (
     <Layout>
       <section className="container-luxe pt-24 sm:pt-32 md:pt-48 pb-24 sm:pb-32">

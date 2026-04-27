@@ -1,23 +1,58 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
 import SmoothImage from "@/components/site/SmoothImage";
+import { useSeo } from "@/hooks/useSeo";
 import { getProduct, products } from "@/data/products";
 
 const Product = () => {
   const { slug } = useParams();
   const [active, setActive] = useState(0);
-
-  if (slug === "rose-chikan-hijab") {
-    return <Navigate to="/product/co-ord-set" replace />;
-  }
-  if (slug === "magenta-wool-hijab") {
-    return <Navigate to="/product/co-ord-set" replace />;
-  }
+  const isLegacySlug = slug === "rose-chikan-hijab" || slug === "magenta-wool-hijab";
 
   const product = getProduct(slug || "");
+  const seoTitle = product
+    ? `${product.name} | Luxury Modest Wear in India | ARJ`
+    : "Product Unavailable | The House of ARJ";
+  const seoDescription = product
+    ? `Shop ${product.name} by The House of ARJ. ${product.shortDescription} Crafted for refined modest fashion in India.`
+    : "The requested ARJ piece is currently unavailable. Explore our luxury hijab and modest wear collections in India.";
+
+  const productJsonLd = useMemo(() => {
+    if (!product || !slug) return undefined;
+
+    return {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: product.name,
+      description: `${product.shortDescription} ${product.description}`,
+      image: product.gallery.map((item) => `${window.location.origin}${item}`),
+      brand: {
+        "@type": "Brand",
+        name: "The House of ARJ",
+      },
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "INR",
+        price: product.price.replace(/[^\d.]/g, ""),
+        availability: "https://schema.org/InStock",
+        url: `${window.location.origin}/product/${slug}`,
+      },
+    };
+  }, [product, slug]);
+
+  useSeo({
+    title: seoTitle,
+    description: seoDescription,
+    path: slug ? `/product/${slug}` : "/collections",
+    jsonLd: productJsonLd,
+  });
+
+  if (isLegacySlug) {
+    return <Navigate to="/product/co-ord-set" replace />;
+  }
 
   if (!product) {
     return (

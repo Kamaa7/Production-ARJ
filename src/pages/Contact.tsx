@@ -2,9 +2,17 @@ import { FormEvent, useState } from "react";
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
 import { toast } from "@/hooks/use-toast";
+import { useSeo } from "@/hooks/useSeo";
 import { Instagram } from "lucide-react";
 
 const Contact = () => {
+  useSeo({
+    title: "Contact The House of ARJ | Enquiries & Orders",
+    description:
+      "Contact The House of ARJ for product enquiries, WhatsApp reservations, and atelier correspondence in Lucknow, India.",
+    path: "/contact",
+  });
+
   const [sent, setSent] = useState(false);
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {

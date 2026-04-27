@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
 import SmoothImage from "@/components/site/SmoothImage";
+import { useSeo } from "@/hooks/useSeo";
 import zardoziCrimsonPrayer from "@/assets/zardozi-crimson-prayer.png";
 import hero7LavenderZardoziJournal from "@/assets/hero-7-lavender-zardozi-journal.png";
 import hero8RustZardoziJournal from "@/assets/hero-8-rust-zardozi-journal.png";
@@ -15,6 +16,13 @@ const entries = [
 ];
 
 const Journal = () => {
+  useSeo({
+    title: "Modest Fashion Journal | Styling, Care & Craft | ARJ",
+    description:
+      "Read ARJ journal stories on modest styling, hijab care, seasonal edits, and craftsmanship from the atelier.",
+    path: "/journal",
+  });
+
   return (
     <Layout>
       <section className="container-luxe pt-20 sm:pt-24 md:pt-36 pb-16 sm:pb-20">

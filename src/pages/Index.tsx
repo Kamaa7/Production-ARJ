@@ -5,6 +5,7 @@ import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
 import ProductCard from "@/components/site/ProductCard";
 import SmoothImage from "@/components/site/SmoothImage";
+import { useSeo } from "@/hooks/useSeo";
 import { products } from "@/data/products";
 
 import lookSageRose from "@/assets/look-sage-rose.jpg";
@@ -14,6 +15,13 @@ import hero1 from "@/assets/hero-1-crimson-zardozi-new.jpg";
 import heroShowcaseVideo from "@/assets/new showcase video.mp4";
 
 const Index = () => {
+  useSeo({
+    title: "Luxury Hijabs in India | The House of ARJ",
+    description:
+      "Discover handcrafted luxury hijabs and modest couture in India by The House of ARJ. Shop zardozi hijabs, co-ord sets, and elegant festive essentials.",
+    path: "/",
+  });
+
   const reduceMotion = useReducedMotion();
   const [showHeroFallback, setShowHeroFallback] = useState(false);
   const heroVideoRef = useRef<HTMLVideoElement | null>(null);
