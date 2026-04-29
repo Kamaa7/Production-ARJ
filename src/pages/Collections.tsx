@@ -26,10 +26,11 @@ const Collections = () => {
   });
 
   const [active, setActive] = useState<(typeof categories)[number]>("All");
+  const collectionProducts = products.filter((p) => p.slug !== "kashmiri-stole");
   const filtered =
     active === "All"
-      ? [...products].sort((a, b) => (categoryOrder[a.category] ?? 99) - (categoryOrder[b.category] ?? 99))
-      : products.filter((p) => p.category === active);
+      ? [...collectionProducts].sort((a, b) => (categoryOrder[a.category] ?? 99) - (categoryOrder[b.category] ?? 99))
+      : collectionProducts.filter((p) => p.category === active);
 
   return (
     <Layout>
