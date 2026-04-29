@@ -26,7 +26,7 @@ const About = () => {
         <Reveal as="p" className="md:col-span-3 eyebrow">— Origin, MMXXV</Reveal>
         <Reveal as="div" delay={0.15} className="md:col-span-8 md:col-start-5 space-y-10 sm:space-y-12">
           <p className="font-serif font-light text-2xl sm:text-3xl md:text-4xl leading-[1.3] tracking-tight">
-            ARJ was founded in the spring of 2025 around a single intention — to design hijabs and modest dress that respect the wearer, the maker, and the material.
+            ARJ was founded by Areej Sana Farooqui in the spring of 2025 around a single intention — to design hijabs and modest dress that respect the wearer, the maker, and the material.
           </p>
           <p className="text-base md:text-lg text-muted-foreground leading-[1.95] font-light max-w-2xl">
             We refuse the seasonal acceleration of fashion. Each hijab is conceived once, refined slowly, and produced in editions small enough to be remembered.

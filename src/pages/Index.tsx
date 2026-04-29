@@ -160,7 +160,7 @@ const Index = () => {
               The Noir Veil
             </h3>
             <p className="text-base text-muted-foreground leading-[1.95] font-light mb-10 sm:mb-12">
-              A study in restraint. A Lavender hijab traced with copper zardozi, mukaish-dotted at the edge, finished with a hand-rolled hem.
+              A study in restraint. A Lavender hijab traced with copper zardozi, at the edge, finished with a hand-rolled hem.
             </p>
             <Link to="/product/kashmiri-stole" className="link-underline text-[0.68rem] uppercase tracking-[0.36em]">
               Discover
