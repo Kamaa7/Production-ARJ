@@ -318,7 +318,7 @@ export const products: Product[] = [
     shortDescription: "Black co-ord with a fluid drape and minimal detailing.",
     description:
       "A black co-ord set with a clean, modest silhouette and soft drape. Designed for everyday elegance with easy movement and a tailored fall.",
-    image: lookNoirFountain,
+    image: lookNoirGarden,
     gallery: [lookNoirFountain, lookNoirGarden],
     fabric: "Soft wool blend",
     origin: "Lucknow, India",
