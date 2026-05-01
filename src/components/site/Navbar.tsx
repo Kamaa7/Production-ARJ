@@ -3,7 +3,6 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import logoMark from "@/assets/arj-mark.png";
-import SmoothImage from "@/components/site/SmoothImage";
 
 const links = [
   { to: "/collections", label: "Collections" },
@@ -41,17 +40,21 @@ const Navbar = () => {
     >
       <div className="container-luxe flex items-center justify-between h-20 md:h-24">
         <Link to="/" aria-label="ARJ — The House of ARJ" className="flex items-center">
-          <SmoothImage
-            src={logoMark}
-            alt="ARJ"
-            eager
-            width={96}
-            height={96}
-            placeholderClassName="bg-transparent"
-            wrapperClassName="h-8 md:h-9 w-8 md:w-9 bg-transparent overflow-visible"
-            className={`h-full w-full object-contain transition-[mix-blend-mode] duration-700 ${
-              transparent ? "mix-blend-multiply" : ""
+          <span
+            aria-hidden
+            className={`block h-8 md:h-9 w-8 md:w-9 shrink-0 transition-colors duration-700 ${
+              transparent ? "bg-ivory" : "bg-foreground"
             }`}
+            style={{
+              maskImage: `url(${logoMark})`,
+              WebkitMaskImage: `url(${logoMark})`,
+              maskSize: "contain",
+              maskRepeat: "no-repeat",
+              maskPosition: "center",
+              WebkitMaskSize: "contain",
+              WebkitMaskRepeat: "no-repeat",
+              WebkitMaskPosition: "center",
+            }}
           />
         </Link>
 
