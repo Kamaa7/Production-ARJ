@@ -49,8 +49,8 @@ const Navbar = () => {
             height={96}
             placeholderClassName="bg-transparent"
             wrapperClassName="h-8 md:h-9 w-8 md:w-9 bg-transparent overflow-visible"
-            className={`h-full w-full object-contain transition-[filter] duration-700 ${
-              transparent ? "invert brightness-0" : ""
+            className={`h-full w-full object-contain transition-[mix-blend-mode] duration-700 ${
+              transparent ? "mix-blend-multiply" : ""
             }`}
           />
         </Link>
