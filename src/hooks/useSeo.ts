@@ -25,11 +25,8 @@ export const useSeo = ({ title, description, path, jsonLd }: SeoConfig) => {
     ensureMeta("name", "description").setAttribute("content", description);
     ensureMeta("property", "og:title").setAttribute("content", title);
     ensureMeta("property", "og:description").setAttribute("content", description);
-    const shareImage = `${window.location.origin}/arj-mark.png`;
-    ensureMeta("property", "og:image").setAttribute("content", shareImage);
     ensureMeta("name", "twitter:title").setAttribute("content", title);
     ensureMeta("name", "twitter:description").setAttribute("content", description);
-    ensureMeta("name", "twitter:image").setAttribute("content", shareImage);
 
     const canonicalHref = path ? `${window.location.origin}${path}` : window.location.href;
     let canonical = document.head.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
