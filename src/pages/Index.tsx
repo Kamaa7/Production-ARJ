@@ -18,7 +18,7 @@ const Index = () => {
   useSeo({
     title: "Luxury Hijabs in India | The House of ARJ",
     description:
-      "Discover handcrafted luxury hijabs and modest couture in India by The House of ARJ. Shop zardozi hijabs, co-ord sets, and elegant festive essentials.",
+      "Discover handcrafted luxury hijabs and modest clothing culture in India by The House of ARJ. Shop zardozi hijabs, co-ord sets, and elegant festive essentials.",
     path: "/",
   });
 
