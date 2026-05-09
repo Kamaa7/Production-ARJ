@@ -43,7 +43,7 @@ const Navbar = () => {
           <span
             aria-hidden
             className={`block h-8 md:h-9 w-8 md:w-9 shrink-0 transition-colors duration-700 ${
-              transparent ? "bg-white" : "bg-foreground"
+              transparent ? "bg-ivory" : "bg-foreground"
             }`}
             style={{
               maskImage: `url(${logoMark})`,

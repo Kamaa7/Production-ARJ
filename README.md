@@ -1,3 +1,3 @@
-# Welcome to the clients project
+# The House of ARJ — web experience
 
-TODO: Document your project here
+Vite + React site for the ARJ atelier.
