@@ -18,7 +18,7 @@ import zardoziWhisper from "@/assets/zardozi-crimson-whisper.jpg";
 import zardoziCamel from "@/assets/zardozi-camel-repose.jpg";
 import zardoziDetail from "@/assets/zardozi-crimson-detail.jpg";
 import zardoziOrangePortrait from "@/assets/zardozi-orange-portrait.jpeg";
-import mustardZardoziHijab from "@/assets/mustard-zardozi-hijab.png";
+import mustardHeavyHandWorkHijab from "@/assets/mustard-heavy-hand-work-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -104,15 +104,16 @@ export const products: Product[] = [
   },
   {
     slug: "mustard-zardozi-hijab",
-    name: "Mustard Zardozi Hijab",
+    name: "Mustard heavy hand work hijab",
     category: "Zardozi Hijabs",
     price: "₹ 799",
-    shortDescription: "Mustard hijab with delicate zardozi detailing on the edge.",
+    shortDescription:
+      "Mustard hijab with heavy hand-embroidered zardozi — silver thread and pink accents along the face-framing border.",
     description:
-      "A rich mustard hijab finished with fine zardozi embellishment along the temple edge. Light to drape and designed for festive as well as everyday wear.",
-    image: mustardZardoziHijab,
-    gallery: [mustardZardoziHijab],
-    fabric: "Soft georgette blend · Zardozi work",
+      "A rich mustard hijab finished with dense handwork along the edge: silver-toned zardozi, floral scallops, and vivid pink bead accents that catch the light. Drapes softly for festive days and quiet occasions alike — made slowly in our Lucknow atelier.",
+    image: mustardHeavyHandWorkHijab,
+    gallery: [mustardHeavyHandWorkHijab],
+    fabric: "Georgette · Heavy zardozi & bead handwork",
     origin: "Lucknow, India",
   },
   {
