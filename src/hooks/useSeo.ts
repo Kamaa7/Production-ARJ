@@ -5,6 +5,8 @@ type SeoConfig = {
   description: string;
   path?: string;
   jsonLd?: Record<string, unknown>;
+  /** Makes canonical, og:url, and og:image absolute for consistent indexing. */
+  siteOrigin?: string;
 };
 
 const ensureMeta = (key: "name" | "property", value: string) => {
@@ -18,7 +20,7 @@ const ensureMeta = (key: "name" | "property", value: string) => {
   return meta;
 };
 
-export const useSeo = ({ title, description, path, jsonLd }: SeoConfig) => {
+export const useSeo = ({ title, description, path, jsonLd, siteOrigin }: SeoConfig) => {
   useEffect(() => {
     document.title = title;
 
@@ -28,7 +30,17 @@ export const useSeo = ({ title, description, path, jsonLd }: SeoConfig) => {
     ensureMeta("name", "twitter:title").setAttribute("content", title);
     ensureMeta("name", "twitter:description").setAttribute("content", description);
 
-    const canonicalHref = path ? `${window.location.origin}${path}` : window.location.href;
+    const origin = siteOrigin?.replace(/\/$/, "");
+    const canonicalHref = origin
+      ? `${origin}${path ?? "/"}`
+      : path
+        ? `${window.location.origin}${path}`
+        : window.location.href;
+
+    if (origin) {
+      ensureMeta("property", "og:url").setAttribute("content", canonicalHref);
+      ensureMeta("property", "og:image").setAttribute("content", `${origin}/arj-mark.png?v=arj3`);
+    }
     let canonical = document.head.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) {
       canonical = document.createElement("link");
@@ -57,5 +69,5 @@ export const useSeo = ({ title, description, path, jsonLd }: SeoConfig) => {
         currentScript.remove();
       }
     };
-  }, [title, description, path, jsonLd]);
+  }, [title, description, path, jsonLd, siteOrigin]);
 };

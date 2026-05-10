@@ -6,6 +6,7 @@ import Reveal from "@/components/site/Reveal";
 import ProductCard from "@/components/site/ProductCard";
 import SmoothImage from "@/components/site/SmoothImage";
 import { useSeo } from "@/hooks/useSeo";
+import { HOME_META_DESCRIPTION, SITE_ORIGIN } from "@/lib/siteConfig";
 import { products } from "@/data/products";
 
 import lookSageRose from "@/assets/look-sage-rose.jpg";
@@ -17,9 +18,29 @@ import heroShowcaseVideo from "@/assets/new showcase video.mp4";
 const Index = () => {
   useSeo({
     title: "Luxury Hijabs in India | The House of ARJ",
-    description:
-      "Discover modest clothing culture in India by The House of ARJ. Shop zardozi hijabs, co-ord sets, and elegant festive essentials.",
+    description: HOME_META_DESCRIPTION,
     path: "/",
+    siteOrigin: SITE_ORIGIN,
+    jsonLd: {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": `${SITE_ORIGIN}/#website`,
+          url: SITE_ORIGIN,
+          name: "The House of ARJ",
+          description: HOME_META_DESCRIPTION,
+          publisher: { "@id": `${SITE_ORIGIN}/#organization` },
+        },
+        {
+          "@type": "Organization",
+          "@id": `${SITE_ORIGIN}/#organization`,
+          name: "The House of ARJ",
+          url: SITE_ORIGIN,
+          description: HOME_META_DESCRIPTION,
+        },
+      ],
+    },
   });
 
   const reduceMotion = useReducedMotion();
