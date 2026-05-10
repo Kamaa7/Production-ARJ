@@ -20,6 +20,7 @@ import zardoziDetail from "@/assets/zardozi-crimson-detail.jpg";
 import zardoziOrangePortrait from "@/assets/zardozi-orange-portrait.jpeg";
 import mustardHeavyHandWorkHijab from "@/assets/mustard-heavy-hand-work-hijab.jpg";
 import darkGreenZardoziHandworkHijab from "@/assets/dark-green-zardozi-handwork-hijab.jpg";
+import blackZardoziHandWorkHijab from "@/assets/black-zardozi-hand-work-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -129,6 +130,20 @@ export const products: Product[] = [
     image: darkGreenZardoziHandworkHijab,
     gallery: [darkGreenZardoziHandworkHijab],
     fabric: "Georgette · Zardozi & bead handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "black-zardozi-hand-work-hijab",
+    name: "Black zardozi hand work hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 699",
+    shortDescription:
+      "Black hijab with gold zardozi and pearl-bead florals along the face-framing edge; shown with matching niqab drape.",
+    description:
+      "An ink-black hijab in a light, fluid drape, hand-embroidered along the border that frames the face with gold-toned zardozi, scrolling vines, and small pearls. Paired here with a matching black veil for the lower face — evening-ready and refined, finished in our Lucknow atelier.",
+    image: blackZardoziHandWorkHijab,
+    gallery: [blackZardoziHandWorkHijab],
+    fabric: "Georgette · Gold zardozi & pearl handwork",
     origin: "Lucknow, India",
   },
   {
