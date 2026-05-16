@@ -23,6 +23,7 @@ import darkGreenZardoziHandworkHijab from "@/assets/dark-green-zardozi-handwork-
 import blackZardoziHandWorkHijab from "@/assets/black-zardozi-hand-work-hijab.jpg";
 import pistaGreenZardoziHijab from "@/assets/pista-green-zardozi-hijab.jpg";
 import peachZardoziHijab from "@/assets/peach-zardozi-hijab.jpg";
+import blueZardoziHijab from "@/assets/blue-zardozi-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -175,6 +176,20 @@ export const products: Product[] = [
     image: peachZardoziHijab,
     gallery: [peachZardoziHijab],
     fabric: "Georgette · Gold zardozi & sequin handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "blue-zardozi-hijab",
+    name: "Blue Zardozi Hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 699",
+    shortDescription:
+      "Navy hijab with a face-framing border of gold zardozi florals — wine-red centers, silver beads, and fine vine scrolls.",
+    description:
+      "A deep navy hijab in a soft georgette drape, hand-embroidered along the edge that frames the face with repeating floral zardozi: crimson centers, gold-toned leaves, and tiny silver beads that catch the light. Refined for day or evening — finished in our Lucknow atelier.",
+    image: blueZardoziHijab,
+    gallery: [blueZardoziHijab],
+    fabric: "Georgette · Gold zardozi & bead handwork",
     origin: "Lucknow, India",
   },
   {
