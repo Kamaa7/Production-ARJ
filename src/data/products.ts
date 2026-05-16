@@ -39,6 +39,7 @@ import coordSet999 from "@/assets/co-ord-set 999.jpg";
 import hero3BlushGardenSet from "@/assets/hero-3-blush-garden.png";
 import velvetJetBlackKurtaSet from "@/assets/velvet-jet-black-kurta-set.png";
 import skyBlueKurtaSet from "@/assets/sky-blue-kurta-set.png";
+import kurtaSet from "@/assets/kurta-set.jpg";
 import greenCoOrdSet from "@/assets/green-co-ord-set.png";
 import redCoOrdSet from "@/assets/red-co-ord-set.jpeg";
 
@@ -464,6 +465,20 @@ export const products: Product[] = [
     image: skyBlueKurtaSet,
     gallery: [skyBlueKurtaSet],
     fabric: "Soft cotton blend",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "kurta-set",
+    name: "Kurta set",
+    category: "Kurta Sets",
+    price: "₹ 999",
+    shortDescription:
+      "Black windowpane kurta and salwar with teal floral embroidery at the front and cuffs, finished with a bright teal hem.",
+    description:
+      "A knee-length black kurta in a fine windowpane check, paired with matching wide-leg trousers. The front panel and sleeve cuffs carry hand-finished floral work in teal, grey, and muted blue, traced with a vivid teal border at the hem and cuffs. Modest, polished, and made for warm days — from our Lucknow atelier.",
+    image: kurtaSet,
+    gallery: [kurtaSet],
+    fabric: "Cotton blend · Hand-embroidered panel",
     origin: "Lucknow, India",
   },
 ];
