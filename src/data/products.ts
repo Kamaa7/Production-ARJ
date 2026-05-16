@@ -39,6 +39,7 @@ import hero3BlushGardenSet from "@/assets/hero-3-blush-garden.png";
 import velvetJetBlackKurtaSet from "@/assets/velvet-jet-black-kurta-set.png";
 import skyBlueKurtaSet from "@/assets/sky-blue-kurta-set.png";
 import greenCoOrdSet from "@/assets/green-co-ord-set.png";
+import redCoOrdSet from "@/assets/red-co-ord-set.jpeg";
 
 export type Product = {
   slug: string;
@@ -369,6 +370,20 @@ export const products: Product[] = [
     image: greenCoOrdSet,
     gallery: [greenCoOrdSet],
     fabric: "Rayon",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "red-co-ord-set",
+    name: "Red co-ord set",
+    category: "Co-ord Sets",
+    price: "₹ 1,499",
+    shortDescription:
+      "Deep red kurta and salwar with an ombré dupatta — cream at the crown fading into matching red at the hem.",
+    description:
+      "A three-piece co-ord in rich crimson: a knee-length A-line kurta, tapered salwar, and a long sheer dupatta with a soft cream-to-red gradient. Easy, modest tailoring for garden days and gatherings — finished in our Lucknow atelier.",
+    image: redCoOrdSet,
+    gallery: [redCoOrdSet],
+    fabric: "Soft rayon blend · Ombré dupatta",
     origin: "Lucknow, India",
   },
   {
