@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import Analytics from "@/components/Analytics";
 
 const Index = lazy(() => import("./pages/Index.tsx"));
 const Collections = lazy(() => import("./pages/Collections.tsx"));
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Analytics />
         <Suspense
           fallback={
             <div className="min-h-screen w-full bg-background text-foreground grid place-items-center text-sm tracking-[0.16em] uppercase text-muted-foreground">
