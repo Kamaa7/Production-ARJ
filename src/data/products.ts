@@ -22,6 +22,7 @@ import mustardHeavyHandWorkHijab from "@/assets/mustard-heavy-hand-work-hijab.jp
 import darkGreenZardoziHandworkHijab from "@/assets/dark-green-zardozi-handwork-hijab.jpg";
 import blackZardoziHandWorkHijab from "@/assets/black-zardozi-hand-work-hijab.jpg";
 import pistaGreenZardoziHijab from "@/assets/pista-green-zardozi-hijab.jpg";
+import peachZardoziHijab from "@/assets/peach-zardozi-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -159,6 +160,20 @@ export const products: Product[] = [
     image: pistaGreenZardoziHijab,
     gallery: [pistaGreenZardoziHijab],
     fabric: "Georgette · Gold zardozi & bead handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "peach-zardozi-hijab",
+    name: "Peach Zardozi Hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 699",
+    shortDescription:
+      "Warm peach hijab with gold zardozi along the face-framing border, accented with silver sequins that catch the light.",
+    description:
+      "A soft salmon-peach hijab in a light georgette drape, hand-embroidered along the edge that frames the face with gold zardozi scrolls and spaced silver sequin rounds. Warm and luminous for daytime gatherings or evening wear — finished in our Lucknow atelier.",
+    image: peachZardoziHijab,
+    gallery: [peachZardoziHijab],
+    fabric: "Georgette · Gold zardozi & sequin handwork",
     origin: "Lucknow, India",
   },
   {
