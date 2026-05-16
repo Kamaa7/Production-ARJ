@@ -42,6 +42,7 @@ import skyBlueKurtaSet from "@/assets/sky-blue-kurta-set.png";
 import kurtaSet from "@/assets/kurta-set.jpg";
 import greenCoOrdSet from "@/assets/green-co-ord-set.png";
 import redCoOrdSet from "@/assets/red-co-ord-set.jpeg";
+import coordSet1099 from "@/assets/co-ord-set-1099.jpg";
 
 export type Product = {
   slug: string;
@@ -400,6 +401,20 @@ export const products: Product[] = [
     image: redCoOrdSet,
     gallery: [redCoOrdSet],
     fabric: "Soft rayon blend · Ombré dupatta",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "co-ord-set-1099",
+    name: "Co-ord set",
+    category: "Co-ord Sets",
+    price: "₹ 1,099",
+    shortDescription:
+      "Zebra-print co-ord in chocolate and ivory with a textured crinkle finish — hip-length tunic and wide-leg trousers, styled with a cream hijab.",
+    description:
+      "A two-piece co-ord in a seersucker-like crinkle weave, printed in bold wavy zebra stripes of deep brown and warm tan on white. The tunic falls to the hip with long sleeves; the trousers are wide-leg and easy. Worn with a soft cream hijab for a graphic, modest look — finished in our Lucknow atelier.",
+    image: coordSet1099,
+    gallery: [coordSet1099],
+    fabric: "Textured cotton blend · Printed",
     origin: "Lucknow, India",
   },
   {
