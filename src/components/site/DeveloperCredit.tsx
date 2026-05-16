@@ -17,8 +17,8 @@ const DeveloperCredit = () => {
           type="button"
           aria-label="Developer — connect on GitHub or WhatsApp"
           className={cn(
-            "group relative flex h-12 w-12 items-center justify-center rounded-full",
-            "border border-border/50 bg-background/70 p-1.5 shadow-sm backdrop-blur-sm",
+            "group relative flex h-7 w-7 shrink-0 items-center justify-center rounded-full",
+            "border border-border/50 bg-background/70 p-0.5 shadow-sm backdrop-blur-sm",
             "transition-all duration-500 hover:border-foreground/20 hover:bg-background hover:shadow-md hover:scale-105",
             "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
             "data-[state=open]:border-foreground/25 data-[state=open]:bg-background data-[state=open]:shadow-md"
@@ -28,8 +28,8 @@ const DeveloperCredit = () => {
             src={developerIcon}
             alt=""
             className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-105"
-            width={36}
-            height={36}
+            width={22}
+            height={22}
           />
         </button>
       </PopoverTrigger>

@@ -48,16 +48,16 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-border/40">
-        <div className="container-luxe py-8 flex flex-col items-center gap-3">
-          <DeveloperCredit />
-          <div className="flex w-full flex-col items-center justify-between gap-3 text-center md:flex-row md:text-left">
-            <p className="text-[0.62rem] uppercase tracking-[0.36em] text-muted-foreground">
-              © {new Date().getFullYear()} The House of ARJ
-            </p>
-            <p className="text-[0.62rem] uppercase tracking-[0.36em] text-muted-foreground">
-              All rights reserved
-            </p>
+        <div className="container-luxe grid grid-cols-1 items-center gap-y-4 py-8 md:grid-cols-[1fr_auto_1fr] md:gap-x-6">
+          <p className="text-center text-[0.62rem] uppercase leading-none tracking-[0.36em] text-muted-foreground md:text-left">
+            © {new Date().getFullYear()} The House of ARJ
+          </p>
+          <div className="flex justify-center md:justify-self-center">
+            <DeveloperCredit />
           </div>
+          <p className="text-center text-[0.62rem] uppercase leading-none tracking-[0.36em] text-muted-foreground md:text-right">
+            All rights reserved
+          </p>
         </div>
       </div>
     </footer>
