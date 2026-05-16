@@ -21,6 +21,7 @@ import zardoziOrangePortrait from "@/assets/zardozi-orange-portrait.jpeg";
 import mustardHeavyHandWorkHijab from "@/assets/mustard-heavy-hand-work-hijab.jpg";
 import darkGreenZardoziHandworkHijab from "@/assets/dark-green-zardozi-handwork-hijab.jpg";
 import blackZardoziHandWorkHijab from "@/assets/black-zardozi-hand-work-hijab.jpg";
+import pistaGreenZardoziHijab from "@/assets/pista-green-zardozi-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -144,6 +145,20 @@ export const products: Product[] = [
     image: blackZardoziHandWorkHijab,
     gallery: [blackZardoziHandWorkHijab],
     fabric: "Georgette · Gold zardozi & pearl handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "pista-green-zardozi-hijab",
+    name: "Pista Green Zardozi Hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 699",
+    shortDescription:
+      "Soft pista-green hijab with gold zardozi florals, wine bead accents, and fine crystals along the face-framing border.",
+    description:
+      "A muted pistachio-toned hijab in a light, airy drape, hand-embroidered along the edge that frames the face with gold zardozi vines, deep wine beads, and tiny crystals that catch the light. Fresh and wearable for day or evening — finished slowly in our Lucknow atelier.",
+    image: pistaGreenZardoziHijab,
+    gallery: [pistaGreenZardoziHijab],
+    fabric: "Georgette · Gold zardozi & bead handwork",
     origin: "Lucknow, India",
   },
   {
