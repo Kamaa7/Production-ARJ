@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import WhatsAppFloat from "./WhatsAppFloat";
 
 const Layout = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
@@ -28,6 +29,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
         </motion.main>
       </AnimatePresence>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 };
