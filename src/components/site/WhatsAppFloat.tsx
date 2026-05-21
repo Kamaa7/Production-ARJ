@@ -9,9 +9,9 @@ const WhatsAppFloat = () => {
       rel="noopener noreferrer"
       aria-label="Buy on WhatsApp — message The House of ARJ"
       className={cn(
-        "group fixed z-50 flex items-center gap-2.5 sm:gap-3",
-        "rounded-full border border-border/60 bg-background/95 px-3 py-2.5 sm:px-4 sm:py-3",
-        "text-foreground shadow-[0_8px_32px_-8px_hsl(var(--ink)/0.18)] backdrop-blur-md",
+        "group fixed z-50 flex items-center gap-2 sm:gap-2.5",
+        "rounded-full border border-border/60 bg-background/95 px-2.5 py-2 sm:px-3 sm:py-2.5",
+        "text-foreground shadow-[0_6px_24px_-8px_hsl(var(--ink)/0.16)] backdrop-blur-md",
         "transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]",
         "hover:border-foreground/25 hover:bg-background hover:shadow-[0_12px_40px_-10px_hsl(var(--ink)/0.22)]",
         "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
@@ -21,7 +21,7 @@ const WhatsAppFloat = () => {
     >
       <span
         className={cn(
-          "flex h-8 w-8 shrink-0 items-center justify-center rounded-full",
+          "flex h-7 w-7 shrink-0 items-center justify-center rounded-full",
           "border border-border/50 bg-foreground text-background",
           "transition-colors duration-500 group-hover:border-accent/40 group-hover:bg-foreground"
         )}
