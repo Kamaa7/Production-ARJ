@@ -27,9 +27,9 @@ const WhatsAppFloat = () => {
         )}
         aria-hidden
       >
-        <WhatsAppIcon className="h-4 w-4" />
+        <WhatsAppIcon className="h-3.5 w-3.5" />
       </span>
-      <span className="pr-0.5 text-[0.58rem] uppercase leading-none tracking-[0.28em] text-foreground sm:text-[0.62rem] sm:tracking-[0.32em]">
+      <span className="pr-0.5 text-[0.52rem] uppercase leading-none tracking-[0.26em] text-foreground sm:text-[0.56rem] sm:tracking-[0.3em]">
         Buy on WhatsApp
       </span>
     </a>

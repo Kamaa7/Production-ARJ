@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, ShoppingBag, X } from "lucide-react";
 import logoMark from "@/assets/arj-mark.png";
+import { useCart } from "@/context/CartContext";
 
 const links = [
   { to: "/collections", label: "Collections" },
@@ -16,6 +17,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const reduceMotion = useReducedMotion();
+  const { count } = useCart();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -76,15 +78,30 @@ const Navbar = () => {
           ))}
         </nav>
 
-        <div className="hidden md:block w-[60px]" aria-hidden />
+        <div className="flex items-center gap-2">
+          <Link
+            to="/bag"
+            aria-label={count > 0 ? `Your bag, ${count} items` : "Your bag"}
+            className={`relative p-2 transition-colors duration-700 ${
+              transparent ? "text-ivory hover:text-ivory/80" : "text-foreground hover:text-muted-foreground"
+            }`}
+          >
+            <ShoppingBag className="h-5 w-5" strokeWidth={1.25} />
+            {count > 0 && (
+              <span className="absolute -top-0.5 -right-0.5 min-w-[1.125rem] h-[1.125rem] px-1 flex items-center justify-center bg-accent text-[0.55rem] font-medium text-accent-foreground tabular-nums">
+                {count > 9 ? "9+" : count}
+              </span>
+            )}
+          </Link>
 
-        <button
-          aria-label="Menu"
-          className={`md:hidden p-2 -mr-2 transition-colors duration-700 ${transparent ? "text-ivory" : "text-foreground"}`}
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-        </button>
+          <button
+            aria-label="Menu"
+            className={`md:hidden p-2 -mr-2 transition-colors duration-700 ${transparent ? "text-ivory" : "text-foreground"}`}
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
@@ -104,6 +121,16 @@ const Navbar = () => {
                   </NavLink>
                 </li>
               ))}
+              <li>
+                <NavLink to="/bag" className="font-serif text-3xl sm:text-4xl tracking-tight text-foreground inline-flex items-center gap-3">
+                  Bag
+                  {count > 0 && (
+                    <span className="text-[0.62rem] font-sans uppercase tracking-[0.36em] text-muted-foreground tabular-nums">
+                      ({count})
+                    </span>
+                  )}
+                </NavLink>
+              </li>
               <li className="pt-6 mt-2 border-t border-border/40 space-y-3 text-sm font-light text-muted-foreground">
                 <a href="tel:+919278335862" className="block link-underline text-foreground">+91 92783 35862</a>
                 <a href="mailto:thehouseofarj@gmail.com" className="block link-underline text-foreground break-all">thehouseofarj@gmail.com</a>

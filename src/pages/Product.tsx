@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Layout from "@/components/site/Layout";
 import Reveal from "@/components/site/Reveal";
 import SmoothImage from "@/components/site/SmoothImage";
+import AddToBagButton from "@/components/site/AddToBagButton";
 import { useSeo } from "@/hooks/useSeo";
 import { getProduct, products } from "@/data/products";
 
@@ -131,15 +132,15 @@ const Product = () => {
             </p>
             <p className="mt-12 sm:mt-16 font-serif text-2xl sm:text-3xl font-light">{product.price}</p>
 
-            <div className="mt-10 sm:mt-12 flex flex-wrap items-center gap-6 sm:gap-10">
+            <div className="mt-10 sm:mt-12 flex flex-wrap items-center gap-4 sm:gap-6">
+              <AddToBagButton product={product} variant="primary" />
               <a
                 href={`https://wa.me/919278335862?text=${encodeURIComponent(`Hello ARJ — I would like to enquire about the ${product.name}.`)}`}
                 target="_blank"
                 rel="noreferrer"
-                className="group relative bg-foreground text-background px-10 sm:px-12 py-4 sm:py-5 text-[0.68rem] uppercase tracking-[0.36em] overflow-hidden"
+                className="border border-foreground/20 px-10 sm:px-12 py-4 sm:py-5 text-[0.68rem] uppercase tracking-[0.36em] hover:border-foreground transition-colors duration-700"
               >
-                <span className="relative z-10">Reserve via WhatsApp</span>
-                <span className="absolute inset-0 bg-accent translate-y-full transition-transform duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:translate-y-0" />
+                Reserve via WhatsApp
               </a>
               <Link to="/contact" className="link-underline text-[0.68rem] uppercase tracking-[0.36em]">
                 Enquire
@@ -183,19 +184,24 @@ const Product = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-16 sm:gap-y-20">
           {related.map((p) => (
-            <Link key={p.slug} to={`/product/${p.slug}`} className="group">
-              <SmoothImage
-                src={p.image}
-                alt={p.name}
-                wrapperClassName="aspect-[3/4]"
-                className="absolute inset-0 h-full w-full object-cover group-hover:scale-[1.04]"
-                style={{ transitionProperty: "opacity, transform", transitionDuration: "2200ms", transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}
-              />
-              <div className="mt-6 flex justify-between">
-                <h3 className="font-serif font-light text-xl md:text-2xl">{p.name}</h3>
-                <p className="text-sm text-muted-foreground">{p.price}</p>
+            <div key={p.slug}>
+              <Link to={`/product/${p.slug}`} className="group block">
+                <SmoothImage
+                  src={p.image}
+                  alt={p.name}
+                  wrapperClassName="aspect-[3/4]"
+                  className="absolute inset-0 h-full w-full object-cover group-hover:scale-[1.04]"
+                  style={{ transitionProperty: "opacity, transform", transitionDuration: "2200ms", transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}
+                />
+              </Link>
+              <div className="mt-6 flex justify-between gap-4">
+                <Link to={`/product/${p.slug}`} className="font-serif font-light text-xl md:text-2xl hover:opacity-70 transition-opacity duration-700">
+                  {p.name}
+                </Link>
+                <p className="text-sm text-muted-foreground whitespace-nowrap">{p.price}</p>
               </div>
-            </Link>
+              <AddToBagButton product={p} variant="outline" className="mt-4" />
+            </div>
           ))}
         </div>
       </section>

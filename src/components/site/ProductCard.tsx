@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Product } from "@/data/products";
 import SmoothImage from "@/components/site/SmoothImage";
+import AddToBagButton from "@/components/site/AddToBagButton";
 
 const ProductCard = ({ product, index = 0 }: { product: Product; index?: number }) => {
   return (
@@ -20,14 +21,17 @@ const ProductCard = ({ product, index = 0 }: { product: Product; index?: number 
           className="absolute inset-0 h-full w-full object-cover group-hover:scale-[1.04]"
           style={{ transitionProperty: "opacity, transform", transitionDuration: "2200ms", transitionTimingFunction: "cubic-bezier(0.22,1,0.36,1)" }}
         />
-        <div className="mt-8 flex items-baseline justify-between gap-4">
-          <div>
-            <p className="eyebrow mb-2">{product.category}</p>
-            <h3 className="font-serif font-light text-2xl md:text-[1.7rem] tracking-tight">{product.name}</h3>
-          </div>
-          <p className="text-sm text-muted-foreground font-light whitespace-nowrap">{product.price}</p>
-        </div>
       </Link>
+      <div className="mt-8 flex items-baseline justify-between gap-4">
+        <Link to={`/product/${product.slug}`} className="min-w-0 group/title">
+          <p className="eyebrow mb-2">{product.category}</p>
+          <h3 className="font-serif font-light text-2xl md:text-[1.7rem] tracking-tight group-hover/title:opacity-70 transition-opacity duration-700">
+            {product.name}
+          </h3>
+        </Link>
+        <p className="text-sm text-muted-foreground font-light whitespace-nowrap">{product.price}</p>
+      </div>
+      <AddToBagButton product={product} variant="outline" className="mt-5" />
     </motion.div>
   );
 };
