@@ -24,6 +24,7 @@ import blackZardoziHandWorkHijab from "@/assets/black-zardozi-hand-work-hijab.jp
 import pistaGreenZardoziHijab from "@/assets/pista-green-zardozi-hijab.jpg";
 import peachZardoziHijab from "@/assets/peach-zardozi-hijab.jpg";
 import blueZardoziHijab from "@/assets/blue-zardozi-hijab.jpg";
+import blueZardoziWorkHijab from "@/assets/blue-zardozi-work-hijab.png";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -191,6 +192,20 @@ export const products: Product[] = [
       "A deep navy hijab in a soft georgette drape, hand-embroidered along the edge that frames the face with repeating floral zardozi: crimson centers, gold-toned leaves, and tiny silver beads that catch the light. Refined for day or evening — finished in our Lucknow atelier.",
     image: blueZardoziHijab,
     gallery: [blueZardoziHijab],
+    fabric: "Georgette · Gold zardozi & bead handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "blue-zardozi-work-hijab",
+    name: "Blue Zardozi work Hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 699",
+    shortDescription:
+      "Deep navy hijab with hand-finished zardozi work — magenta florals, silver vine scrolls, and pearl accents along the face-framing border.",
+    description:
+      "A deep navy hijab in a soft georgette drape, hand-embroidered along the edge that frames the face with fine zardozi work: vibrant magenta florals with white centers, silver-toned leafy vines, and tiny pearl beads that catch the light. Refined for day or evening — finished in our Lucknow atelier.",
+    image: blueZardoziWorkHijab,
+    gallery: [blueZardoziWorkHijab],
     fabric: "Georgette · Gold zardozi & bead handwork",
     origin: "Lucknow, India",
   },
