@@ -25,6 +25,7 @@ import pistaGreenZardoziHijab from "@/assets/pista-green-zardozi-hijab.jpg";
 import peachZardoziHijab from "@/assets/peach-zardozi-hijab.jpg";
 import blueZardoziHijab from "@/assets/blue-zardozi-hijab.jpg";
 import blueZardoziWorkHijab from "@/assets/blue-zardozi-work-hijab.png";
+import brownZardoziHandworkHijab from "@/assets/brown-zardozi-handwork-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -207,6 +208,20 @@ export const products: Product[] = [
     image: blueZardoziWorkHijab,
     gallery: [blueZardoziWorkHijab],
     fabric: "Georgette · Gold zardozi & bead handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "brown-zardozi-handwork-hijab",
+    name: "Brown zardozi handwork hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 749",
+    shortDescription:
+      "Olive-brown hijab with a face-framing band of gold zardozi — diamond lattice, sequin accents, and scalloped floral edging.",
+    description:
+      "A warm olive-brown hijab in a soft matte drape, hand-finished along the edge that frames the face with dense zardozi work: gold-toned metallic thread in a diamond lattice, reflective sequins, and a delicate scalloped floral border. Understated and refined for day or evening — finished in our Lucknow atelier.",
+    image: brownZardoziHandworkHijab,
+    gallery: [brownZardoziHandworkHijab],
+    fabric: "Georgette · Gold zardozi & sequin handwork",
     origin: "Lucknow, India",
   },
   {
