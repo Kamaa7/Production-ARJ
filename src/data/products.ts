@@ -42,6 +42,7 @@ import hero3BlushGardenSet from "@/assets/hero-3-blush-garden.png";
 import velvetJetBlackKurtaSet from "@/assets/velvet-jet-black-kurta-set.png";
 import skyBlueKurtaSet from "@/assets/sky-blue-kurta-set.png";
 import kurtaSet from "@/assets/kurta-set.jpg";
+import greenShrugSet from "@/assets/green-shrug-set.jpg";
 import greenCoOrdSet from "@/assets/green-co-ord-set.png";
 import redCoOrdSet from "@/assets/red-co-ord-set.jpeg";
 import coordSet1099 from "@/assets/co-ord-set-1099.jpg";
@@ -524,6 +525,20 @@ export const products: Product[] = [
     image: kurtaSet,
     gallery: [kurtaSet],
     fabric: "Cotton blend · Hand-embroidered panel",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "green-shrug-set",
+    name: "Green Shrug set",
+    category: "Kurta Sets",
+    price: "₹ 1,499",
+    shortDescription:
+      "Emerald green three-piece with a flowy shrug, inner top, and straight trousers — scattered silver mirror accents throughout.",
+    description:
+      "A deep emerald green kurta set in three pieces: a long, open-front shrug with delicate silver mirror work scattered across the fabric, worn over a matching inner top and straight-cut trousers. Modern ethnic wear with a graceful drape — finished in our Lucknow atelier.",
+    image: greenShrugSet,
+    gallery: [greenShrugSet],
+    fabric: "Georgette blend · Mirror work",
     origin: "Lucknow, India",
   },
 ];
