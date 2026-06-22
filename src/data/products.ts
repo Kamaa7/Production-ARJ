@@ -26,6 +26,7 @@ import peachZardoziHijab from "@/assets/peach-zardozi-hijab.jpg";
 import blueZardoziHijab from "@/assets/blue-zardozi-hijab.jpg";
 import blueZardoziWorkHijab from "@/assets/blue-zardozi-work-hijab.png";
 import brownZardoziHandworkHijab from "@/assets/brown-zardozi-handwork-hijab.jpg";
+import chikankariHijab from "@/assets/chikankari-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -236,6 +237,20 @@ export const products: Product[] = [
     image: beigeColorZardoziHijab,
     gallery: [beigeColorZardoziHijab],
     fabric: "Soft georgette blend · Zardozi work",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "chikankari-hijab",
+    name: "Chikankari hijab",
+    category: "Hijabs",
+    price: "₹ 450",
+    shortDescription:
+      "Cream hijab with hand-embroidered green chikankari florals along the scalloped face-framing border.",
+    description:
+      "A soft cream hijab in a light, airy drape, hand-finished along the scalloped edge that frames the face with delicate chikankari embroidery — green floral vines and leafy scrolls in the Lucknow tradition. Refined for day or evening — finished in our Lucknow atelier.",
+    image: chikankariHijab,
+    gallery: [chikankariHijab],
+    fabric: "Georgette · Chikankari handwork",
     origin: "Lucknow, India",
   },
   {
