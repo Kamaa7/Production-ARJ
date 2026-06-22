@@ -28,6 +28,7 @@ import blueZardoziWorkHijab from "@/assets/blue-zardozi-work-hijab.png";
 import brownZardoziHandworkHijab from "@/assets/brown-zardozi-handwork-hijab.jpg";
 import chikankariHijab from "@/assets/chikankari-hijab.jpg";
 import maroonZardoziHandWorkHijab from "@/assets/maroon-zardozi-hand-work-hijab.jpg";
+import greenZardoziHandWorkHijab from "@/assets/green-zardozi-hand-work-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -266,6 +267,20 @@ export const products: Product[] = [
     image: maroonZardoziHandWorkHijab,
     gallery: [maroonZardoziHandWorkHijab],
     fabric: "Georgette · Gold zardozi & pearl handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "green-zardozi-hand-work-hijab",
+    name: "Green zardozi hand work hijab",
+    category: "Hijabs",
+    price: "₹ 699",
+    shortDescription:
+      "Olive-green hijab with zardozi florals along the face-framing border — maroon bead centers, white accents, and green vine scrolls.",
+    description:
+      "A muted olive-green hijab in a soft georgette drape, hand-embroidered along the edge that frames the face with zardozi florals: deep maroon bead centers, white accents, and green-toned leafy vines. Refined for day or evening — finished in our Lucknow atelier.",
+    image: greenZardoziHandWorkHijab,
+    gallery: [greenZardoziHandWorkHijab],
+    fabric: "Georgette · Zardozi & bead handwork",
     origin: "Lucknow, India",
   },
   {
