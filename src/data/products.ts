@@ -27,6 +27,7 @@ import blueZardoziHijab from "@/assets/blue-zardozi-hijab.jpg";
 import blueZardoziWorkHijab from "@/assets/blue-zardozi-work-hijab.png";
 import brownZardoziHandworkHijab from "@/assets/brown-zardozi-handwork-hijab.jpg";
 import chikankariHijab from "@/assets/chikankari-hijab.jpg";
+import maroonZardoziHandWorkHijab from "@/assets/maroon-zardozi-hand-work-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
@@ -251,6 +252,20 @@ export const products: Product[] = [
     image: chikankariHijab,
     gallery: [chikankariHijab],
     fabric: "Georgette · Chikankari handwork",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "maroon-zardozi-hand-work-hijab",
+    name: "Maroon zardozi hand work hijab",
+    category: "Hijabs",
+    price: "₹ 699",
+    shortDescription:
+      "Deep maroon hijab with gold zardozi and pearl-bead florals along the face-framing border.",
+    description:
+      "A rich maroon hijab in a soft georgette drape, hand-embroidered along the edge that frames the face with gold-toned zardozi, delicate floral vines, and small pearl beads that catch the light. Refined for day or evening — finished in our Lucknow atelier.",
+    image: maroonZardoziHandWorkHijab,
+    gallery: [maroonZardoziHandWorkHijab],
+    fabric: "Georgette · Gold zardozi & pearl handwork",
     origin: "Lucknow, India",
   },
   {
