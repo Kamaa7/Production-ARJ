@@ -30,6 +30,7 @@ import chikankariHijab from "@/assets/chikankari-hijab.jpg";
 import maroonZardoziHandWorkHijab from "@/assets/maroon-zardozi-hand-work-hijab.jpg";
 import greenZardoziHandWorkHijab from "@/assets/green-zardozi-hand-work-hijab.jpg";
 import beigeColorZardoziHijab from "@/assets/beige-color-zardozi-hijab.png";
+import offWhiteZardoziHijab from "@/assets/off white Zardozi HIjab.jpg";
 
 import coordOchreMagentaPose from "@/assets/coord-ochre-magenta-pose.jpg";
 import coordOchreCuff from "@/assets/coord-ochre-cuff.jpg";
@@ -239,6 +240,20 @@ export const products: Product[] = [
     image: beigeColorZardoziHijab,
     gallery: [beigeColorZardoziHijab],
     fabric: "Soft georgette blend · Zardozi work",
+    origin: "Lucknow, India",
+  },
+  {
+    slug: "off-white-zardozi-hijab",
+    name: "Off white zardozi hijab",
+    category: "Zardozi Hijabs",
+    price: "₹ 649",
+    shortDescription:
+      "Off-white cream hijab with delicate zardozi along the face-framing border — turquoise and gold bead accents.",
+    description:
+      "A soft off-white cream hijab in a light, flowy drape, hand-embroidered along the edge that frames the face with fine zardozi: metallic thread, turquoise beads, and gold accents. Quietly luminous for day or evening — finished in our Lucknow atelier.",
+    image: offWhiteZardoziHijab,
+    gallery: [offWhiteZardoziHijab],
+    fabric: "Georgette · Zardozi & bead handwork",
     origin: "Lucknow, India",
   },
   {
