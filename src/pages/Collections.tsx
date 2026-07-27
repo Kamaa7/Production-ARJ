@@ -6,7 +6,13 @@ import { useSeo } from "@/hooks/useSeo";
 import { products } from "@/data/products";
 
 const baseCategories = ["Zardozi Hijabs", "Hijabs", "Co-ord Sets", "Kurta Sets", "Kaftans", "Abayas"] as const;
-const categories = ["All", ...baseCategories.filter((c) => products.some((p) => p.category === c))] as const;
+const productInCategory = (p: (typeof products)[number], category: string) =>
+  p.category === category || Boolean(p.alsoIn?.includes(category as (typeof baseCategories)[number]));
+
+const categories = [
+  "All",
+  ...baseCategories.filter((c) => products.some((p) => productInCategory(p, c))),
+] as const;
 
 const categoryOrder: Record<string, number> = {
   "Zardozi Hijabs": 0,
@@ -30,7 +36,7 @@ const Collections = () => {
   const filtered =
     active === "All"
       ? [...collectionProducts].sort((a, b) => (categoryOrder[a.category] ?? 99) - (categoryOrder[b.category] ?? 99))
-      : collectionProducts.filter((p) => p.category === active);
+      : collectionProducts.filter((p) => productInCategory(p, active));
 
   return (
     <Layout>

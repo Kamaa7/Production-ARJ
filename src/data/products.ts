@@ -51,10 +51,14 @@ import greenCoOrdSet from "@/assets/green-co-ord-set.png";
 import redCoOrdSet from "@/assets/red-co-ord-set.jpeg";
 import coordSet1099 from "@/assets/co-ord-set-1099.jpg";
 
+export type ProductCategory = "Kurta Sets" | "Abayas" | "Hijabs" | "Kaftans" | "Zardozi Hijabs" | "Co-ord Sets";
+
 export type Product = {
   slug: string;
   name: string;
-  category: "Kurta Sets" | "Abayas" | "Hijabs" | "Kaftans" | "Zardozi Hijabs" | "Co-ord Sets";
+  category: ProductCategory;
+  /** Extra collection tabs this product should also appear under (without duplicating in All). */
+  alsoIn?: ProductCategory[];
   price: string;
   shortDescription: string;
   description: string;
@@ -246,6 +250,7 @@ export const products: Product[] = [
     slug: "off-white-zardozi-hijab",
     name: "Off white zardozi hijab",
     category: "Zardozi Hijabs",
+    alsoIn: ["Hijabs"],
     price: "₹ 649",
     shortDescription:
       "Off-white cream hijab with delicate zardozi along the face-framing border — turquoise and gold bead accents.",
